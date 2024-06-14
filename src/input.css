@@ -1,0 +1,141 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #fff; /* default background color */
+  --text-color: #000; /* default text color */
+  --border-color: 6, 182, 212; /* Cyan */
+  --base-border-color: 100, 100, 100; /* Gray */
+  --highlighted-text-color: 6, 182, 212;
+}
+
+.theme-cyan {
+  --highlighted-text-color: 6, 182, 212; /* Cyan */
+  --border-color: 6, 182, 212; /* Cyan */
+}
+
+.theme-purple {
+  --highlighted-text-color: 147, 51, 234; /* Purple */
+  --border-color: 147, 51, 234; /* Purple */
+}
+
+.theme-orange {
+  --highlighted-text-color: 249, 115, 22; /* Orange */
+  --border-color: 249, 115, 22; /* Orange */
+}
+
+.theme-pink {
+  --highlighted-text-color: 219, 39, 119; /* Pink */
+  --border-color: 219, 39, 119; /* Pink */
+}
+
+.theme-green {
+  --highlighted-text-color: 22, 163, 74; /* Green */
+  --border-color: 22, 163, 74; /* Green */
+}
+
+.border-theme {
+  border: solid 1px;
+  border-color: rgb(var(--base-border-color));
+}
+
+.border-theme-button {
+  border-left: solid 1px;
+  border-top: solid 1px;
+  border-right: solid 3px;
+  border-bottom: solid 3px;
+  border-color: rgb(var(--border-color));
+}
+
+.hover-border-theme-button:hover {
+  border-left: solid 1px;
+  border-top: solid 1px;
+  border-right: solid 3px;
+  border-bottom: solid 3px;
+  border-color: rgb(var(--border-color));
+}
+
+.hover-border-theme:hover {
+  border: solid 1px;
+  border-color: rgb(var(--border-color));
+}
+
+.highlighted-text {
+  color: rgb(var(--highlighted-text-color))
+}
+
+.hover-highlighted-text:hover {
+  color: rgb(var(--highlighted-text-color))
+}
+
+.hover-highlighted-button:hover {
+  color: rgb(var(--highlighted-text-color))
+}
+
+#App {
+  font-family: 'Urbanist';
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 0.5)
+  ),
+  url("assets/images/grid.png");
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(9, auto);
+  gap: 15px 15px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Hello"
+    "AboutMe"
+    "Bubbles"
+    "Resume"
+    "Now"
+    "Playground"
+    "Countries"
+    "Contact"
+    "Timezone"
+}
+
+
+@media (min-width: 1024px) {
+  .container {
+    padding-top: 0%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(8, 1fr);
+    gap: 15px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Hello Hello Hello AboutMe"
+      "Hello Hello Hello AboutMe"
+      "Hello Hello Hello AboutMe"
+      "Hello Hello Hello AboutMe"
+      "Contact Resume Resume AboutMe"
+      "Contact Resume Resume AboutMe"
+      "Contact Now Playground Countries"
+      "Contact Now Bubbles Timezone"
+  }
+}
+
+.card {
+  border-radius: 10px;
+  color: #d6d6d6;
+}
+
