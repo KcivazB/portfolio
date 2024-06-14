@@ -1,4 +1,4 @@
-# first-project
+# Vue3 Bento Portfolio
 
 ## Project setup
 ```
