@@ -1,5 +1,5 @@
 <template>
-      <div class="Timezone p-5 justify-center items-center">
+      <div class="Timezone justify-center items-center">
         <div class="text-xl text-white px-2 py-2 font-bold"> Timezone </div>
         <div class="text-2xl text-white text-center"> {{ time }} </div>
       </div>

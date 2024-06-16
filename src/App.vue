@@ -9,7 +9,7 @@
       <Contact class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
       <Now class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
       <Playground class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
-      <Countries class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
+      <Animation class="card border-theme hover-border-theme shadow-md bg-stone-950"/>
       <Timezone class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
       <Bubbles class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
     </div>
@@ -22,7 +22,7 @@ import AboutMe from './components/AboutMe.vue'
 import Resume from './components/Resume.vue'
 import Contact from './components/Contact.vue'
 import Now from './components/Now.vue'
-import Countries from './components/Countries.vue'
+import Animation from './components/Animation.vue'
 import Timezone from './components/Timezone.vue'
 import Bubbles from './components/Bubbles.vue'
 import Playground from './components/Playground.vue'
@@ -35,7 +35,7 @@ export default {
     Contact,
     Resume,
     Now,
-    Countries,
+    Animation,
     Timezone,
     Bubbles,
     Playground,

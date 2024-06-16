@@ -632,16 +632,16 @@ video {
   display: flex;
 }
 
+.hidden {
+  display: none;
+}
+
 .h-6 {
   height: 1.5rem;
 }
 
 .w-1\/3 {
   width: 33.333333%;
-}
-
-.w-1\/4 {
-  width: 25%;
 }
 
 .w-1\/6 {
@@ -694,10 +694,6 @@ video {
 
 .gap-4 {
   gap: 1rem;
-}
-
-.self-center {
-  align-self: center;
 }
 
 .rounded-full {
@@ -823,6 +819,23 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.grayscale {
+  --tw-grayscale: grayscale(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
@@ -875,7 +888,7 @@ video {
 }
 
 .border-theme {
-  border: solid 1px;
+  border: solid 2px;
   border-color: rgb(var(--base-border-color));
 }
 
@@ -896,12 +909,16 @@ video {
 }
 
 .hover-border-theme:hover {
-  border: solid 1px;
+  border: solid 2px;
   border-color: rgb(var(--border-color));
 }
 
 .highlighted-text {
   color: rgb(var(--highlighted-text-color))
+}
+
+.bar-theme-color {
+  background-color: rgb(var(--highlighted-text-color))
 }
 
 .hover-highlighted-text:hover {
@@ -945,7 +962,7 @@ video {
     "Resume"
     "Now"
     "Playground"
-    "Countries"
+    "Animation"
     "Contact"
     "Timezone"
 }
@@ -967,7 +984,7 @@ video {
       "Hello Hello Hello AboutMe"
       "Contact Resume Resume AboutMe"
       "Contact Resume Resume AboutMe"
-      "Contact Now Playground Countries"
+      "Contact Now Playground Animation"
       "Contact Now Bubbles Timezone"
   }
 }

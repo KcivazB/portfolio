@@ -1,0 +1,112 @@
+[
+    {
+        "name": "Bootstrap",
+        "icon": "Bootstrap.png",
+        "type": "Front"
+    },
+    {
+        "name": "CSS3",
+        "icon": "CSS3.png",
+        "type": "Front"
+    },    
+    {
+        "name": "Docker",
+        "icon": "Docker.png",
+        "type": "Other"
+    },    
+    {
+        "name": "GitHub",
+        "icon": "GitHub.png",
+        "type": "Other"
+    },    
+    {
+        "name": "GitLab",
+        "icon": "GitLab.png",
+        "type": "Other"
+    },    
+    {
+        "name": "Go",
+        "icon": "Go.png",
+        "type": "Back"
+    },    
+    {
+        "name": "Grafana",
+        "icon": "Grafana.png",
+        "type": "Other"
+    },    
+    {
+        "name": "HTML5",
+        "icon": "HTML5.png",
+        "type": "Front"
+    },
+    {
+        "name": "Java",
+        "icon": "Java.png",
+        "type": "Back"
+    },  
+    {
+        "name": "JavaScript",
+        "icon": "JavaScript.png",
+        "type": "Front"
+    },    
+    {
+        "name": "jQuery",
+        "icon": "jQuery.png",
+        "type": "Front"
+    },    
+    {
+        "name": "MySQL",
+        "icon": "MySQL.png",
+        "type": "Other"
+    },
+    {
+        "name": "Node.js",
+        "icon": "Node.js.png",
+        "type": "Back"
+    },
+    {
+        "name": "PHP",
+        "icon": "PHP.png",
+        "type": "Back"
+    },
+    {
+        "name": "PostgresSQL",
+        "icon": "PostgresSQL.png",
+        "type": "Other"
+    },
+    {
+        "name": "Postman",
+        "icon": "Postman.png",
+        "type": "Other"
+    },
+    {
+        "name": "Python",
+        "icon": "Python.png",
+        "type": "Back"
+    },
+    {
+        "name": "React",
+        "icon": "React.png",
+        "type": "Front"
+    },
+    {
+        "name": "SonarQube",
+        "icon": "SonarQube.png",
+        "type": "Other"
+    },
+    {
+        "name": "Symfony",
+        "icon": "Symfony.png",
+        "type": "Front"
+    },
+    {
+        "name": "Tailwind CSS",
+        "icon": "Tailwind CSS.png",
+        "type": "Front"
+    },
+    {
+        "name": "Vue.js",
+        "icon": "Vue.js.png",
+        "type": "Front"
+    }
+]

@@ -36,7 +36,7 @@
 }
 
 .border-theme {
-  border: solid 1px;
+  border: solid 2px;
   border-color: rgb(var(--base-border-color));
 }
 
@@ -57,12 +57,16 @@
 }
 
 .hover-border-theme:hover {
-  border: solid 1px;
+  border: solid 2px;
   border-color: rgb(var(--border-color));
 }
 
 .highlighted-text {
   color: rgb(var(--highlighted-text-color))
+}
+
+.bar-theme-color {
+  background-color: rgb(var(--highlighted-text-color))
 }
 
 .hover-highlighted-text:hover {
@@ -106,7 +110,7 @@
     "Resume"
     "Now"
     "Playground"
-    "Countries"
+    "Animation"
     "Contact"
     "Timezone"
 }
@@ -129,7 +133,7 @@
       "Hello Hello Hello AboutMe"
       "Contact Resume Resume AboutMe"
       "Contact Resume Resume AboutMe"
-      "Contact Now Playground Countries"
+      "Contact Now Playground Animation"
       "Contact Now Bubbles Timezone"
   }
 }
