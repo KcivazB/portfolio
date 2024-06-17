@@ -1,10 +1,10 @@
 <template>
   <div class="Animation card shadow-lg rounded-lg border border-darkslate-400 hover:border-primary-500">
-    <Carousel :autoplay="600" :itemsToShow="3.95" :wrapAround="true" :transition="500" :pauseAutoplayOnHover="true" class="carousel-container">
+    <Carousel :autoplay="700" :itemsToShow="3.95" :wrapAround="true" :transition="700" :pauseAutoplayOnHover="true" class="carousel-container">
       <Slide v-for="skill in Skills" :key="skill.name">
         <div class="carousel__item">
           <img :src="`/icons/${skill.icon}`" :alt="skill.name" class="carousel__image">
-          <p>{{ skill.name }}</p>
+          <div class="">{{ skill.name }}</div>
         </div>
       </Slide>
     </Carousel>
@@ -53,8 +53,8 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
 }
 
 .carousel__image {
@@ -82,11 +82,11 @@ export default defineComponent({
 
 .carousel__slide {
   opacity: 0.9;
-  transform: rotateY(-20deg) scale(0.9);
+  transform: rotateY(-20deg) scale(0.75);
 }
 
 .carousel__slide--active ~ .carousel__slide {
-  transform: rotateY(20deg) scale(0.9);
+  transform: rotateY(20deg) scale(0.75);
 }
 
 .carousel__slide:not(.carousel__slide--active){
@@ -95,16 +95,16 @@ export default defineComponent({
 
 .carousel__slide--prev {
   opacity: 1;
-  transform: rotateY(-10deg) scale(0.95);
+  transform: rotateY(-10deg) scale(0.75);
 }
 
 .carousel__slide--next {
   opacity: 1;
-  transform: rotateY(10deg) scale(0.95);
+  transform: rotateY(10deg) scale(0.75);
 }
 
 .carousel__slide--active {
   opacity: 1;
   transform: rotateY(0) scale(1.1);
-}
+  }
 </style>

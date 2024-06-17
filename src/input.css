@@ -77,7 +77,7 @@
   color: rgb(var(--highlighted-text-color))
 }
 
-#App {
+#Home, #Palbro {
   font-family: 'Urbanist';
   background-image: linear-gradient(
     to top,
@@ -137,9 +137,3 @@
       "Contact Now Bubbles Timezone"
   }
 }
-
-.card {
-  border-radius: 10px;
-  color: #d6d6d6;
-}
-

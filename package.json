@@ -15,7 +15,7 @@
     "topojson-client": "^3.1.0",
     "typed.js": "^2.1.0",
     "vue": "^3.2.13",
-    "vue-router": "^4.3.2",
+    "vue-router": "^4.3.3",
     "vue-typed-js": "^0.1.2",
     "vue3-carousel": "^0.3.3",
     "vue3-typed-js": "^0.0.1"
