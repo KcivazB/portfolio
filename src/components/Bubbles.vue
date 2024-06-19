@@ -40,6 +40,7 @@ export default {
     methods: {
         setTheme(theme) {
             document.documentElement.className = theme;
+            localStorage.setItem('theme', theme); // Save the theme in localStorage
         }
     },
 }

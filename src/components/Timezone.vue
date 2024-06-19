@@ -1,8 +1,8 @@
 <template>
-      <div class="Timezone justify-center items-center">
-        <div class="text-xl text-white px-2 py-2 font-bold"> Timezone </div>
-        <div class="text-2xl text-white text-center"> {{ time }} </div>
-      </div>
+  <div class="Timezone justify-center items-center">
+    <div class="text-xl text-white font-bold"> {{ $t('timezone_header') }} </div>
+    <div class="text-2xl text-white text-center"> {{ formattedTime }} </div>
+  </div>
 </template>
 
 <script>
@@ -10,7 +10,7 @@ export default {
   name: 'Timezone',
   data() {
     return {
-      time: new Date().toLocaleString("en-EN", { timeZone: "Europe/Paris", hour:"2-digit", minute:"2-digit", second:"2-digit" })
+      formattedTime: ''
     };
   },
   created() {
@@ -19,7 +19,8 @@ export default {
   methods: {
     updateTime() {
       setInterval(() => {
-        this.time = new Date().toLocaleString("en-EN", { timeZone: "Europe/Paris", hour:"2-digit", minute:"2-digit", second:"2-digit" });
+        const now = new Date();
+        this.formattedTime = now.toLocaleString("en-EN", { timeZone: "Europe/Paris", hour: "2-digit", minute: "2-digit", second: "2-digit" });
       }, 1000);
     }
   }
@@ -27,5 +28,7 @@ export default {
 </script>
 
 <style>
-    .Timezone { grid-area: Timezone; }
+.Timezone {
+  grid-area: Timezone;
+}
 </style>

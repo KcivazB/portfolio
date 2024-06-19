@@ -1,14 +1,11 @@
 <template>
     <div class="Resume flex align-center items-center">
         <div class="left-text w-2/3">
-            <div class="left-0  text-3xl lg:text-5xl">Grab my résumé !</div>
+            <div class="left-0  text-3xl lg:text-5xl">{{ $t('resume_header')}}</div>
         </div>    
         <div class="download-buttons w-1/3 flex flex-col items-center justify-center">
-            <a :href="pdfUrl_EN" target="_blank" rel="noopener noreferrer">
-                <button class="text-xl hover-highlighted-text">Download</button>
-            </a>
-            <a :href="pdfUrl_FR" target="_blank" rel="noopener noreferrer">
-                <button class="text-xl hover-highlighted-text">Télécharger</button>
+            <a :href=" $t('resume_source') " target="_blank" rel="noopener noreferrer">
+                <button class="text-xl hover-highlighted-text">{{ $t('resume_button') }}</button>
             </a>
         </div>
     </div>

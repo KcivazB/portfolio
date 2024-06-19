@@ -5,13 +5,17 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "extract-i18n": "vue-i18n-extract extract"
   },
   "dependencies": {
     "@fontsource/urbanist": "^5.0.20",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "core-js": "^3.8.3",
     "d3": "^7.9.0",
+    "i18next": "^23.11.5",
+    "i18next-browser-languagedetector": "^8.0.0",
+    "i18next-vue": "^4.0.0",
     "topojson-client": "^3.1.0",
     "typed.js": "^2.1.0",
     "vue": "^3.2.13",
@@ -28,7 +32,8 @@
     "@vue/cli-service": "~5.0.0",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "vue-i18n-extract": "^2.0.7"
   },
   "eslintConfig": {
     "root": true,

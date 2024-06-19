@@ -1,28 +1,23 @@
 <template>
   <div class="AboutMe">
     <div class="profile max-h-full">
-      <h2 class="font-bold left-0 text-2xl">About Me</h2>
+      <h2 class="font-bold left-0 text-2xl">{{ $t('aboutme_header') }}</h2>
       <div class="description-container">
-        <p class="text-sm py-2">{{ aboutMe.description }}</p>
+        <p class="text-sm py-2">{{ $t('aboutme_desc') }}</p>
       </div>
       <div class="more-container">
-        <p class="left-0 text-sm">{{ aboutMe.more }}</p>
+        <p class="left-0 text-sm">{{ $t('aboutme_more') }}</p>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-const aboutMe = {
-  description: "I am a dedicated 27-year-old full stack developer specializing in backend development with a strong inclination towards exploring and integrating new frontend technologies and modern JavaScript frameworks.",
-  more: "Outside of coding, I am passionate about cars and gaming — both board games and video games. As a focused and strategic player, I continuously seek the best approaches to challenges."
-}
 
 export default {
   name: 'AboutMe',
   data() {
     return {
-      aboutMe
     };
   },
 }

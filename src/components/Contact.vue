@@ -4,13 +4,13 @@
 
 <template>
       <div class="Contact ">
-        <div class=" text-2xl font-bold">Let's start working together ! 💻</div>
+        <div class=" text-2xl font-bold">{{ $t('contact_header') }}</div>
         <div class="contact-details">
-          <p class="italic font-thin px-2 py-2">Contact details</p>
+          <p class="italic font-thin px-2 py-2">{{$t('contact_details')}}</p>
           <a href="mailto:virgile.baisnee@live.com" class="px-5 py-2 text-lg font-bold hover-highlighted-text">virgile.baisnee@live.com</a>
           <p class="px-5 text-lg">France</p>
 
-          <p class="italic font-thin px-2 py-2">My Socials</p>
+          <p class="italic font-thin px-2 py-2">{{$t('contact_socials')}}</p>
           <div class="links-holder">
             <div>
               <a href="https://github.com/ZavickB" class="px-5 text-lg font-bold hover-highlighted-text">GitHub</a>

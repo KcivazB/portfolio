@@ -77,7 +77,7 @@
   color: rgb(var(--highlighted-text-color))
 }
 
-#Home, #Palbro {
+#Home, #ProjectsList, #ProjectDetail {
   font-family: 'Urbanist';
   background-image: linear-gradient(
     to top,
