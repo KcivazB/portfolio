@@ -1,9 +1,9 @@
 <template>
-    <div id="ProjectsList" class="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-4 lg:p-10 overflow-y-auto">
+    <div id="ProjectsList" class="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-4 pt-20 lg:p-10 overflow-y-auto">
       <div class="container-list w-full max-w-screen-lg">
-        <router-link to="/" class="back-button hover-border-theme absolute top-4 left-4 bg-stone-800 hover:bg-stone-700 text-white py-2 px-4 rounded-lg text-sm z-10">
-          Back
-        </router-link>
+        <router-link to="/projects" class="back-button hover-border-theme absolute top-4 left-4 bg-stone-800 hover:bg-stone-700 text-white py-2 px-4 rounded-lg text-sm z-10">
+        Back
+      </router-link>
   
         <div class="font-bold text-5xl text-center"> Projects List </div>
         <div class="grid grid-cols-1 gap-4 mt-10">

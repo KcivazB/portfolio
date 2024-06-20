@@ -51,7 +51,7 @@ i18next
             hello_colleague: '<span class="highlighted-text">votre prochain collègue</span>',
             hello_passionate: "passionné par la création d'applis et d'outils utiles.",
             aboutme_header: 'A propos de moi',
-            aboutme_desc:"Je suis un développeur full stack dédié de 27 ans, spécialisé dans le développement backend avec une forte inclination pour l'exploration et l'intégration de nouvelles technologies frontend et de frameworks JavaScript modernes.",
+            aboutme_desc:"Je suis un développeur full stack de 27 ans, spécialisé dans le développement backend avec une forte inclination pour l'exploration et l'intégration de nouvelles technologies frontend et de frameworks JavaScript modernes.",
             aboutme_more:"En dehors du codage, ma passion se porte sur les voitures et les jeux — tant les jeux de société que les jeux vidéo. En tant que joueur concentré et stratégique, je recherche continuellement les meilleures approches pour relever les défis.",
             contact_header:"Commençons à travailler ensemble ! 💻",
             contact_details:"Mes coordonnées",

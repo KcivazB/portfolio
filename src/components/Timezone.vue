@@ -1,6 +1,6 @@
 <template>
   <div class="Timezone justify-center items-center">
-    <div class="text-xl text-white font-bold"> {{ $t('timezone_header') }} </div>
+    <div class="text-xl text-white font-bold p-2"> {{ $t('timezone_header') }} </div>
     <div class="text-2xl text-white text-center"> {{ formattedTime }} </div>
   </div>
 </template>
