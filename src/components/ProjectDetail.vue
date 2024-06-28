@@ -26,19 +26,19 @@
       <div v-if="project.technos.back && project.technos.back.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-1">
         <div class="text-2xl font-semibold mb-4">Back-end Technologies</div>
         <div class="flex">
-          <img v-for="tech in project.technos.back" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto">
+          <img v-for="tech in project.technos.back" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
       <div v-if="project.technos.front && project.technos.front.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-1">
         <div class="text-2xl font-semibold mb-4">Front-end Technologies</div>
         <div class="flex">
-          <img v-for="tech in project.technos.front" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto">
+          <img v-for="tech in project.technos.front" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
       <div v-if="project.technos.other && project.technos.other.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-1">
         <div class="text-2xl font-semibold mb-4">Other Technologies</div>
         <div class="flex">
-          <img v-for="tech in project.technos.other" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto">
+          <img v-for="tech in project.technos.other" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
     </div>
