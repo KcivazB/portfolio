@@ -19,7 +19,7 @@
               <a href="https://linkedin.com/in/virgile-baisn%C3%A9e-808517163" class="px-5 text-lg font-bold hover-highlighted-text">LinkedIn</a>
             </div>
             <div>
-              <a href="https://discord.gg/qca7xTXg" class="px-5 text-lg font-bold hover-highlighted-text">Discord</a>
+              <a href="https://discord.com/users/540535438385872896" class="px-5 text-lg font-bold hover-highlighted-text">Discord</a>
             </div>
           </div>
         </div>

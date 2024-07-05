@@ -6,4 +6,8 @@ import "@fontsource/urbanist"; // Defaults to weight 400
 import router from './router';
 import "./output.css"
 
-i18n(createApp(App)).use(VueTyped).use(router).mount('#app')
+const app = createApp(App);
+app.use(i18n);
+app.use(router);
+app.use(VueTyped)
+app.mount('#app')

@@ -1,6 +1,6 @@
 <template>
   <div class="Animation card shadow-lg rounded-lg border border-darkslate-400 hover:border-primary-500">
-    <Carousel :autoplay="700" :itemsToShow="3.95" :wrapAround="true" :transition="700" :pauseAutoplayOnHover="true" class="carousel-container">
+    <Carousel :autoplay="700" :itemsToShow="3.95" :wrapAround="true" :transition="700" :pauseAutoplayOnHover="true" class="carousel-container" :key="carouselKey">
       <Slide v-for="skill in Skills" :key="skill.name">
         <div class="carousel__item">
           <img :src="`/icons/${skill.icon}`" :alt="skill.name" class="carousel__image">
@@ -26,10 +26,23 @@ export default defineComponent({
   },
   data(){
     return {
-      Skills
+      Skills,
+      carouselKey: 0
+    }
+  }, 
+   methods: {
+    forceRerender() {
+      this.carouselKey += 1;
+    },
+  },
+  watch: {
+    '$i18next.language': function(newLang) {
+      this.language = newLang;    
+      this.forceRerender();  
     }
   }
 })
+
 </script>
 
 <style scoped>
