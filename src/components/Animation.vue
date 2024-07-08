@@ -1,6 +1,6 @@
 <template>
-  <div class="Animation card shadow-lg rounded-lg border border-darkslate-400 hover:border-primary-500">
-    <Carousel :autoplay="700" :itemsToShow="3.95" :wrapAround="true" :transition="700" :pauseAutoplayOnHover="true" class="carousel-container" :key="carouselKey">
+  <div class="Animation card shadow-lg rounded-lg border border-darkslate-400 hover:border-primary-500 flex ">
+    <Carousel :autoplay="700" :itemsToShow="3.95" :wrapAround="true" :transition="700" :pauseAutoplayOnHover="true" class="carousel-container flex-col content-center" :key="carouselKey">
       <Slide v-for="skill in Skills" :key="skill.name">
         <div class="carousel__item">
           <img :src="`/icons/${skill.icon}`" :alt="skill.name" class="carousel__image">

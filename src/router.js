@@ -7,10 +7,13 @@ import projects from './assets/projects.json';
 
 const routes = [
   { 
-    path: '/', component: Home 
+    path: '/', 
+    name: 'Home',
+    component: Home 
   },
   { 
-    path: '/projects', 
+    path: '/projects',
+    name: 'Projects',
     component: ProjectsList,
   },
   {

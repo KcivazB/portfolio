@@ -54,8 +54,8 @@
       "githublink" : "https://github.com/ZavickB/Concerto",
       "icon": "concerto.png",
       "shortDesc": {
-        "en": "A Development Project Management Tool",
-        "fr": "Un outil de gestion de projet de développement"
+        "en": "A Project Management Tool",
+        "fr": "Un outil de gestion de projet"
       },
       "desc": {
         "en": [

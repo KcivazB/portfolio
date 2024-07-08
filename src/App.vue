@@ -6,6 +6,9 @@
 <script>
 export default {
     name: 'App',
+    created () {
+        document.title = "Virgile Baisnée - Portfolio";
+    },
     data() {
         return {
 

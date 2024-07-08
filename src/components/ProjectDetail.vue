@@ -1,12 +1,12 @@
 <template>
-  <div id="ProjectDetail" class="min-h-screen flex bg-zinc-950 text-white p-4 pt-20 lg:p-10 overflow-y-auto">
+  <div id="ProjectDetail" class="min-h-screen flex text-white p-4 pt-20 lg:p-10 overflow-y-auto">
     <div class="container-projects w-full">
       <!-- Back Button -->
       <router-link to="/projects" class="back-button hover-border-theme absolute top-4 left-4 bg-zinc-800 hover:bg-zinc-700 text-white py-2 px-4 rounded-lg text-sm z-10">
         {{ $t('back') }}
       </router-link>
 
-      <div class="project-card bg-zinc-950 shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
+      <div class="project-card border-theme bg-zinc-950 shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
         <div class="project-title text-3xl font-bold text-center mb-4">
           {{ project.name }} - {{ project.shortDesc[currentLocale] }}
         </div>
@@ -44,19 +44,19 @@
       <div class="embed-card bg-zinc-950 shadow-md rounded-lg p-6 flex justify-center items-center lg:col-span-3">
         <iframe :src="project.site" frameborder="0" class="iframed rounded-md"></iframe>
       </div>
-      <div v-if="project.technos.back && project.technos.back.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-1">
+      <div v-if="project.technos.back && project.technos.back.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-2">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_backend_technos') }}</div>
         <div class="flex">
           <img v-for="tech in project.technos.back" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
-      <div v-if="project.technos.front && project.technos.front.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-1">
+      <div v-if="project.technos.front && project.technos.front.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-2">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_frontend_technos') }}</div>
         <div class="flex">
           <img v-for="tech in project.technos.front" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
-      <div v-if="project.technos.other && project.technos.other.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-1">
+      <div v-if="project.technos.other && project.technos.other.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-2">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_other_technos') }}</div>
         <div class="flex">
           <img v-for="tech in project.technos.other" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto" :alt="`${tech}`">
@@ -106,13 +106,13 @@ export default {
     padding-top: 0%;
     margin-left: 5%;
     margin-right: 5%;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
     grid-template-areas: 
-        "Project Project Project Embed Embed Embed Back"
-        "Project Project Project Embed Embed Embed Front"
-        "Project Project Project Embed Embed Embed Other";
+        "Project Project Project Embed Embed Embed Back Back"
+        "Project Project Project Embed Embed Embed Front Front"
+        "Project Project Project Embed Embed Embed Other Other";
   }
 
   .project-card {

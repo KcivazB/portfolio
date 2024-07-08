@@ -11,12 +11,12 @@
           v-for="project in projects" 
           :key="project.id" 
           class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950 text-center flex items-center justify-center">
-          <router-link :to="{ name: 'ProjectDetail', params: { id: project.id } }" class="flex w-full">
+          <router-link :to="{ name: 'ProjectDetail', params: { id: project.id } }" class="flex w-full flex-row items-center">
             <div class="logo-container flex items-center justify-center w-1/3">
               <img class="logo-icon" :src="`/logos/${project.icon}`" alt="Project Logo">
             </div>
             <div class="text-container w-2/3 px-4">
-              <h2 class="text-2xl font-bold mb-2 highlighted-text">{{ project.name[currentLocale] }}</h2>
+              <p class="text-2xl font-bold mb-2">{{ project.name }}</p>
               <p>{{ project.shortDesc[currentLocale] }}</p>
             </div>
           </router-link>
