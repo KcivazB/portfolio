@@ -17,8 +17,8 @@
         </span> 
       </div>
       <div class="text-bottom text-xl">{{ $t('hello_passionate') }}</div>
-      <div class="buttons-row z-10">
-        <div class="flex gap-4 mt-10"> 
+      <div class="buttons-row z-10 w-1/2">
+        <div class="flex flex-wrap gap-4 mt-10"> 
           <a href="https://github.com/ZavickB" aria-label="github profile" target="_blank">
             <button class="px-5 py-2 border-theme-button rounded-lg hover-border-theme-button hover-highlighted-button">
               <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6" data-icon="ri:github-fill">
@@ -50,12 +50,12 @@
               </svg>
             </button>
           <div v-if="language.includes('fr')">
-            <button @click="changeLanguage('en')" class="px-5 py-2 border-theme-button rounded-lg hover-border-theme-button hover-highlighted-button">
+            <button @click="changeLanguage('en')" class="px-4 py-2 border-theme-button rounded-lg hover-border-theme-button hover-highlighted-button">
               <img src="flags/uk.svg" class="flag-icon rounded-sm" alt="English">
             </button>
           </div>
           <div v-if="language.includes('en')">
-            <button @click="changeLanguage('fr')" class="px-5 py-2 border-theme-button rounded-lg hover-border-theme-button hover-highlighted-button">
+            <button @click="changeLanguage('fr')" class="px-4 py-2 border-theme-button rounded-lg hover-border-theme-button hover-highlighted-button">
               <img src="flags/fr.svg" class="flag-icon rounded-sm" alt="French">
             </button>
           </div>
@@ -128,8 +128,8 @@ export default {
 }
 
 .profile-img {
-  max-width: 75%; /* Ensure the image scales within the right content */
-  max-height: 75%; /* Ensure the image scales within the right content */
+  max-width: 70%; /* Ensure the image scales within the right content */
+  max-height: 70%; /* Ensure the image scales within the right content */
   object-fit: contain; /* Maintain aspect ratio */
 }
 

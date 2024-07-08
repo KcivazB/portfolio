@@ -1,6 +1,6 @@
 <template>
   <div class="Animation card shadow-lg rounded-lg border border-darkslate-400 hover:border-primary-500 flex ">
-    <Carousel :autoplay="700" :itemsToShow="3.95" :wrapAround="true" :transition="700" :pauseAutoplayOnHover="true" class="carousel-container flex-col content-center" :key="carouselKey">
+    <Carousel :autoplay="700" :itemsToShow="3.5" :wrapAround="true" :transition="700" :pauseAutoplayOnHover="true" class="carousel-container flex-col content-center" :key="carouselKey">
       <Slide v-for="skill in Skills" :key="skill.name">
         <div class="carousel__item">
           <img :src="`/icons/${skill.icon}`" :alt="skill.name" class="carousel__image">
@@ -66,13 +66,13 @@ export default defineComponent({
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 80%;
-  height: 80%;
+  width: 70%;
+  height: 70%;
 }
 
 .carousel__image {
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 80%;
+  max-height: 80%;
   object-fit: contain;
 }
 
@@ -120,4 +120,5 @@ export default defineComponent({
   opacity: 1;
   transform: rotateY(0) scale(1.1);
   }
+
 </style>

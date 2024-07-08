@@ -106,13 +106,13 @@ export default {
     padding-top: 0%;
     margin-left: 5%;
     margin-right: 5%;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
     grid-template-areas: 
-        "Project Project Project Embed Embed Embed Back Back"
-        "Project Project Project Embed Embed Embed Front Front"
-        "Project Project Project Embed Embed Embed Other Other";
+        "Project Project Project Project Embed Embed Embed Back Back"
+        "Project Project Project Project Embed Embed Embed Front Front"
+        "Project Project Project Project Embed Embed Embed Other Other";
   }
 
   .project-card {
