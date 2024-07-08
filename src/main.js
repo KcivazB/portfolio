@@ -9,5 +9,5 @@ import "./output.css"
 const app = createApp(App);
 app.use(i18n);
 app.use(router);
-app.use(VueTyped)
-app.mount('#app')
+app.use(VueTyped);
+app.mount('#app');

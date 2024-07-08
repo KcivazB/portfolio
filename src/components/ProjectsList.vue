@@ -1,7 +1,7 @@
 <template>
   <div id="ProjectsList" class="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-4 pt-20 lg:p-10 overflow-y-auto">
     <div class="container-list w-full max-w-screen-lg">
-      <router-link to="/" class="back-button hover-border-theme absolute top-4 left-4 bg-stone-800 hover:bg-stone-700 text-white py-2 px-4 rounded-lg text-sm z-10">
+      <router-link to="/" class="back-button hover-border-theme absolute top-4 left-4 bg-zinc-800 hover:bg-zinc-700 text-white py-2 px-4 rounded-lg text-sm z-10">
         {{ $t('back') }}
       </router-link>
 
@@ -10,7 +10,7 @@
         <div 
           v-for="project in projects" 
           :key="project.id" 
-          class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950 text-center flex items-center justify-center">
+          class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950 text-center flex items-center justify-center">
           <router-link :to="{ name: 'ProjectDetail', params: { id: project.id } }" class="flex w-full">
             <div class="logo-container flex items-center justify-center w-1/3">
               <img class="logo-icon" :src="`/logos/${project.icon}`" alt="Project Logo">

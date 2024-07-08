@@ -1,15 +1,15 @@
 <template>
       <div id="Home" class="">
         <div class="container lg:h-screen w-screen lg:p-10">
-            <Hello class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
-            <AboutMe class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
-            <Contact class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
-            <Resume class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
-            <Now class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
-            <Playground class="card p-5 border-theme hover-border-theme shadow-md bg-stone-950"/>
-            <Animation class="card border-theme hover-border-theme shadow-md bg-stone-950"/>
-            <Bubbles class="card p-2 border-theme hover-border-theme shadow-md bg-stone-950"/>
-            <Timezone class="card p-2 border-theme hover-border-theme shadow-md bg-stone-950"/>
+            <Hello class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <AboutMe class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <Contact class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <Resume class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <Now class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <Playground class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <Animation class="card border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <Bubbles class="card p-2 border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <Timezone class="card p-2 border-theme hover-border-theme shadow-md bg-zinc-950"/>
         </div>
   </div>
  

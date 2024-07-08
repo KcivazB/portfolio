@@ -1,5 +1,5 @@
 <template>
-  <div class="AboutMe">
+  <div class="AboutMe text-justify">
     <div class="profile max-h-full">
       <h2 class="font-bold left-0 text-2xl">{{ $t('aboutme_header') }}</h2>
       <div class="description-container">

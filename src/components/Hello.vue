@@ -78,7 +78,7 @@ export default {
   },
   data() {
     return {
-      language: this.$i18next.language.split(0,2),
+      language: this.$i18next.language,
       vueTypedKey: 0,    
     };
   },
@@ -89,7 +89,7 @@ export default {
   },
   methods: {
     changeLanguage() {
-      const newLanguage = this.$i18next.language === 'en' ? 'fr' : 'en';
+      const newLanguage = this.$i18next.language.includes('en') ? 'fr' : 'en';
       this.$i18next.changeLanguage(newLanguage);
       this.language = newLanguage;
     },

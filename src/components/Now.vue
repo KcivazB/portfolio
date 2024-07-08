@@ -7,11 +7,15 @@
           <div class="circle"></div>
         </div>
       </div>
-      <div class="text-sm py-2">
+      <div class="text-sm py-2 text-justify">
         {{ $t('now_current_activity') }}
         <ul class="projects list-disc px-5">
-          <li>{{ $t('now_palbro') }}</li>
-          <li>{{ $t('now_concerto') }}</li>
+          <li class="hover-highlighted-text"> 
+            <router-link :to="{ name: 'ProjectDetail', params: { id: 0 } }" class="flex w-full">{{ $t('now_palbro') }}</router-link>
+          </li>
+          <li class="hover-highlighted-text">
+            <router-link :to="{ name: 'ProjectDetail', params: { id: 1 } }" class="flex w-full">{{ $t('now_concerto') }}</router-link>
+          </li>
           <li>{{ $t('now_cars_hub') }}</li>
         </ul>
       </div>

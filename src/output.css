@@ -670,10 +670,6 @@ video {
   margin-top: 1rem;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .flex {
   display: flex;
 }
@@ -714,6 +710,14 @@ video {
   width: 66.666667%;
 }
 
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
 .w-6 {
   width: 1.5rem;
 }
@@ -724,14 +728,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-3\/5 {
-  width: 60%;
 }
 
 .max-w-screen-lg {
@@ -809,14 +805,14 @@ video {
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
-.bg-stone-800 {
+.bg-zinc-800 {
   --tw-bg-opacity: 1;
-  background-color: rgb(41 37 36 / var(--tw-bg-opacity));
+  background-color: rgb(39 39 42 / var(--tw-bg-opacity));
 }
 
-.bg-stone-950 {
+.bg-zinc-950 {
   --tw-bg-opacity: 1;
-  background-color: rgb(12 10 9 / var(--tw-bg-opacity));
+  background-color: rgb(9 9 11 / var(--tw-bg-opacity));
 }
 
 .fill-cyan-600 {
@@ -887,6 +883,10 @@ video {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -942,12 +942,6 @@ video {
   opacity: 0.5;
 }
 
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .shadow-lg {
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
@@ -988,7 +982,7 @@ video {
   /* default text color */
   --border-color: 6, 182, 212;
   /* Cyan */
-  --base-border-color: 100, 100, 100;
+  --base-border-color: #3f3f46;
   /* Gray */
   --highlighted-text-color: 6, 182, 212;
 }
@@ -1030,7 +1024,7 @@ video {
 
 .border-theme {
   border: solid 2px;
-  border-color: rgb(var(--base-border-color));
+  border-color: var(--base-border-color);
 }
 
 .border-theme-button {
@@ -1134,9 +1128,9 @@ video {
   cursor: pointer;
 }
 
-.hover\:bg-stone-700:hover {
+.hover\:bg-zinc-700:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(68 64 60 / var(--tw-bg-opacity));
+  background-color: rgb(63 63 70 / var(--tw-bg-opacity));
 }
 
 @media (min-width: 1024px) {

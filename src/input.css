@@ -6,7 +6,7 @@
   --bg-color: #fff; /* default background color */
   --text-color: #000; /* default text color */
   --border-color: 6, 182, 212; /* Cyan */
-  --base-border-color: 100, 100, 100; /* Gray */
+  --base-border-color: #3f3f46; /* Gray */
   --highlighted-text-color: 6, 182, 212;
 }
 
@@ -37,7 +37,7 @@
 
 .border-theme {
   border: solid 2px;
-  border-color: rgb(var(--base-border-color));
+  border-color: var(--base-border-color);
 }
 
 .border-theme-button {
