@@ -6,7 +6,7 @@
         {{ $t('back') }}
       </router-link>
 
-      <div class="project-card border-theme bg-zinc-950 shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
+      <div class="project-card border-theme  hover-border-theme bg-zinc-950 shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
         <div class="project-title text-3xl font-bold text-center mb-4">
           {{ project.name }} - {{ project.shortDesc[currentLocale] }}
         </div>
@@ -47,19 +47,19 @@
       <div v-if="project.technos.back && project.technos.back.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-2">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_backend_technos') }}</div>
         <div class="flex">
-          <img v-for="tech in project.technos.back" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto" :alt="`${tech}`">
+          <img v-for="tech in project.technos.back" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
       <div v-if="project.technos.front && project.technos.front.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-2">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_frontend_technos') }}</div>
         <div class="flex">
-          <img v-for="tech in project.technos.front" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto" :alt="`${tech}`">
+          <img v-for="tech in project.technos.front" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
       <div v-if="project.technos.other && project.technos.other.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-2">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_other_technos') }}</div>
         <div class="flex">
-          <img v-for="tech in project.technos.other" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon w-12 mx-auto" :alt="`${tech}`">
+          <img v-for="tech in project.technos.other" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
     </div>

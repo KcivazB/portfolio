@@ -105,6 +105,11 @@
         "type": "Front"
     },
     {
+        "name": "Twig",
+        "icon": "Twig.png",
+        "type": "Front"
+    },
+    {
         "name": "Vue.js",
         "icon": "Vue.js.png",
         "type": "Front"
