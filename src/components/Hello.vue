@@ -41,7 +41,7 @@
               <span class="sr-only" data-umami-event="linkedin button">Linkedin Profile</span>
             </button>
           </a> 
-            <button class="px-5 py-2 border-theme-button rounded-lg hover-border-theme-button hover-highlighted-button">
+            <button @click="toggleEE()" class="px-5 py-2 border-theme-button rounded-lg hover-border-theme-button hover-highlighted-button">
               <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6" data-icon="ri:emotion-laugh-line">
                 <symbol id="ai:ri:emotion-laugh-line">
                   <path fill="currentColor" d="M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12S6.477 2 12 2m0 2a8 8 0 1 0 0 16a8 8 0 0 0 0-16m0 7c2 0 3.667.333 5 1a5 5 0 0 1-10 0c1.333-.667 3-1 5-1M8.5 7a2.5 2.5 0 0 1 2.45 2h-4.9A2.5 2.5 0 0 1 8.5 7m7 0a2.5 2.5 0 0 1 2.45 2h-4.9a2.5 2.5 0 0 1 2.45-2"></path>
@@ -79,7 +79,10 @@ export default {
   data() {
     return {
       language: this.$i18next.language,
-      vueTypedKey: 0,    
+      vueTypedKey: 0,
+      easterEggActivated: false,
+      currentFontIndex:0,
+      fonts:["Urbanist", "Hieroglyphs"]  
     };
   },
   computed: {
@@ -96,6 +99,34 @@ export default {
     forceRerender() {
       this.vueTypedKey += 1;
     },
+    toggleEE() {
+    this.easterEggActivated = !this.easterEggActivated;
+
+    if (this.easterEggActivated) {
+      this.changeFont(); // Activate custom font
+    } else {
+      // Deactivate custom font
+      this.currentFontIndex = 0; // Reset font index to default
+      this.applyFont(this.fonts[this.currentFontIndex]); // Apply default font
+    }
+  },
+  changeFont() {
+    this.currentFontIndex = (this.currentFontIndex + 1) % this.fonts.length;
+    const selectedFont = this.fonts[this.currentFontIndex];
+    this.applyFont(selectedFont);
+    
+  },
+  applyFont(fontFamily) {
+    // Example applying font to IDs '#Home', '#ProjectsList', '#ProjectDetail'
+    const elementIds = ['#Home', '#ProjectsList', '#ProjectDetail'];
+
+    elementIds.forEach(id => {
+      const element = document.querySelector(id);
+      if (element) {
+        element.style.fontFamily = fontFamily;
+      }
+    });
+  },
   },
   watch: {
     '$i18next.language': function(newLang) {

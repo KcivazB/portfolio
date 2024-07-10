@@ -3,6 +3,7 @@ import App from './App.vue'
 import VueTyped from 'vue3-typed-js';
 import i18n from './i18n'
 import "@fontsource/urbanist"; // Defaults to weight 400
+import "@/assets/fonts/Alien_Hieroglyph.ttf"; // Defaults to weight 400
 import router from './router';
 import "./output.css"
 
