@@ -41,22 +41,23 @@
 
       </div>
 
-      <div class="embed-card bg-zinc-950 shadow-md rounded-lg p-6 flex justify-center items-center lg:col-span-3">
+      <div class="embed-card bg-zinc-950 shadow-md rounded-lg p-6 flex justify-center items-center lg:col-span-4">
         <iframe :src="project.site" frameborder="0" class="iframed rounded-md"></iframe>
       </div>
-      <div v-if="project.technos.back && project.technos.back.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-2">
+
+      <div v-if="project.technos.back && project.technos.back.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_backend_technos') }}</div>
         <div class="flex">
           <img v-for="tech in project.technos.back" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
-      <div v-if="project.technos.front && project.technos.front.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-2">
+      <div v-if="project.technos.front && project.technos.front.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_frontend_technos') }}</div>
         <div class="flex">
           <img v-for="tech in project.technos.front" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :alt="`${tech}`">
         </div>
       </div>
-      <div v-if="project.technos.other && project.technos.other.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-2">
+      <div v-if="project.technos.other && project.technos.other.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_other_technos') }}</div>
         <div class="flex">
           <img v-for="tech in project.technos.other" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :alt="`${tech}`">
@@ -106,13 +107,13 @@ export default {
     padding-top: 0%;
     margin-left: 5%;
     margin-right: 5%;
-    grid-template-columns: repeat(9, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 15px;
     grid-template-areas: 
-        "Project Project Project Project Embed Embed Embed Back Back"
-        "Project Project Project Project Embed Embed Embed Front Front"
-        "Project Project Project Project Embed Embed Embed Other Other";
+        "Project Project Project Project Embed Embed Embed Embed Back Back Back"
+        "Project Project Project Project Embed Embed Embed Embed Front Front Front"
+        "Project Project Project Project Embed Embed Embed Embed Other Other Other";
   }
 
   .project-card {
