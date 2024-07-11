@@ -37,10 +37,6 @@
           "Gestion multi-jeux : Suivez la progression sur plusieurs serveurs de jeu en utilisant l'icône de la manette dans la barre supérieure."
         ]
       },
-      "lastDesc": {
-        "en": "PalBro is developed to provide an intuitive and powerful tool for Palworld players, seamlessly integrating into their gaming routine.",
-        "fr": "PalBro est développé pour fournir un outil intuitif et puissant pour les joueurs de Palworld, s'intégrant parfaitement dans leur routine de jeu."
-      },
       "technos": {
         "back": ["Node.js"],
         "front": ["React"],
@@ -72,20 +68,18 @@
           "Idea Management: Easily document and categorize new project ideas.",
           "Task Management: Break down projects into tasks, set priorities, and track progress.",
           "Time Allocation: Assign estimated and actual time to tasks for better planning and retrospection.",
-          "Authentication: Secure login using OAuth.",
-          "Real-time Metrics: Monitor project metrics and progress with integrated Grafana dashboards."
+          "Authentication: Secure login using OAuth."
         ],
         "fr": [
           "Gestion des idées : Documentez et catégorisez facilement de nouvelles idées de projets.",
           "Gestion des tâches : Décomposez les projets en tâches, définissez les priorités et suivez les progrès.",
           "Répartition du temps : Assignez du temps estimé et réel aux tâches pour une meilleure planification et rétrospection.",
-          "Authentification : Connexion sécurisée utilisant OAuth.",
-          "Métriques en temps réel : Surveillez les métriques de projet et les progrès avec des tableaux de bord Grafana intégrés."
+          "Authentification : Connexion sécurisée utilisant OAuth."
         ]
       },
-      "lastDesc": {
-        "en": "Concerto is a lightweight yet powerful tool developed to assist in managing development projects efficiently.",
-        "fr": "Concerto est un outil léger mais puissant développé pour aider à gérer les projets de développement de manière efficace."
+      "toCome": {
+        "en": "Real-time Metrics: Monitor project metrics and progress with integrated Grafana dashboards.",
+        "fr": "Métriques en temps réel : Surveillez les métriques de projet et les progrès avec des tableaux de bord Grafana intégrés."
       },
       "technos": {
         "back": ["Symfony", "MySQL"],

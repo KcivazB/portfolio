@@ -16,9 +16,11 @@
         <ul class="list-disc text-sm pl-6 mt-4">
           <li v-for="functionality in project.functionalities[currentLocale]" :key="functionality">{{ functionality }}</li>
         </ul>
-        <div class="text-sm mt-4 p-4 bg-zinc-800 rounded-md">
-          <div class="font-semibold mb-2">{{ $t('projects_dev_and_innov') }}</div>
-          <p>{{ project.lastDesc[currentLocale] }}</p>
+        
+        
+        <div v-if="project.toCome" class="text-sm mt-4 p-4 bg-zinc-800 rounded-md">
+          <div class="font-semibold mb-2">{{ $t('projects_to_come') }}</div>
+          <p>{{ project.toCome[currentLocale] }}</p>
         </div>
 
         <div class="row flex justify-center">
