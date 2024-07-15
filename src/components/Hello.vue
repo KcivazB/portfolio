@@ -103,11 +103,10 @@ export default {
     this.easterEggActivated = !this.easterEggActivated;
 
     if (this.easterEggActivated) {
-      this.changeFont(); // Activate custom font
+      this.changeFont(); 
     } else {
-      // Deactivate custom font
-      this.currentFontIndex = 0; // Reset font index to default
-      this.applyFont(this.fonts[this.currentFontIndex]); // Apply default font
+      this.currentFontIndex = 0;
+      this.applyFont(this.fonts[this.currentFontIndex]); 
     }
   },
   changeFont() {
@@ -117,7 +116,6 @@ export default {
     
   },
   applyFont(fontFamily) {
-    // Example applying font to IDs '#Home', '#ProjectsList', '#ProjectDetail'
     const elementIds = ['#Home', '#ProjectsList', '#ProjectDetail'];
 
     elementIds.forEach(id => {
@@ -142,7 +140,7 @@ export default {
   grid-area: Hello;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; /* Add some padding if needed */
+  padding: 20px;
 }
 
 .left-content {
@@ -159,14 +157,14 @@ export default {
 }
 
 .profile-img {
-  max-width: 70%; /* Ensure the image scales within the right content */
-  max-height: 70%; /* Ensure the image scales within the right content */
-  object-fit: contain; /* Maintain aspect ratio */
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain; 
 }
 
 .flag-icon {
   width: 24px;
   height: 24px;
-  object-fit: contain; /* Maintain aspect ratio */
+  object-fit: contain;
 }
 </style>

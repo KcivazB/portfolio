@@ -2,8 +2,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import VueTyped from 'vue3-typed-js';
 import i18n from './i18n'
-import "@fontsource/urbanist"; // Defaults to weight 400
-import "@/assets/fonts/Alien_Hieroglyph.ttf"; // Defaults to weight 400
+import "@fontsource/urbanist";
+import "@/assets/fonts/Alien_Hieroglyph.ttf";
 import router from './router';
 import "./output.css"
 

@@ -30,16 +30,16 @@ export default {
 
 .profile {
   overflow-y: auto;
-  padding-right: 15px; /* Adjust for scrollbar width */
+  padding-right: 15px;
 }
 
 .description-container,
 .more-container {
   overflow-y: auto;
-  max-height: 100%; /* Adjust as needed */
+  max-height: 100%;
 }
 
 .text-sm {
-  font-size: 14px; /* Example font size; adjust as needed */
+  font-size: 14px;
 }
 </style>

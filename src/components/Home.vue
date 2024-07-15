@@ -5,6 +5,7 @@
             <AboutMe class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
             <Contact class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
             <Resume class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <SpotifyPlaylist class="card p-2 border-theme hover-border-theme shadow-md bg-zinc-950" />
             <Now class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
             <Playground class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
             <Animation class="card border-theme hover-border-theme shadow-md bg-zinc-950"/>
@@ -25,6 +26,7 @@ import Animation from './Animation.vue'
 import Timezone from './Timezone.vue'
 import Bubbles from './Bubbles.vue'
 import Playground from './Playground.vue'
+import SpotifyPlaylist from './SpotifyPlaylist.vue'
 
 export default {
   name: 'Home',
@@ -38,6 +40,7 @@ export default {
     Timezone,
     Bubbles,
     Playground,
+    SpotifyPlaylist
   },
   data() {
     return {
@@ -53,7 +56,6 @@ export default {
 </script>
 
 <style>
-
   @keyframes slideIn {
     from {
       transform: translateY(10%);
@@ -64,12 +66,12 @@ export default {
       opacity: 1;
     }
   }
-
+  
   .card {
-    border-radius: 10px;
+    border-radius: 12px;
     color: #d6d6d6;
-    opacity: 0; /* Ensure cards are hidden initially */
-    animation: slideIn 0.5s ease-out forwards; /* Apply the animation */
+    opacity: 0;
+    animation: slideIn 0.5s ease-out forwards;
   }
 
   /* ANIMATION MOBILE */
@@ -97,8 +99,11 @@ export default {
   .card:nth-child(3) {
     animation-delay: 3.5s;
   }
-  .card:nth-child(9) {
+  .card:nth-child(10) {
     animation-delay: 4s;
+  }
+  .card:nth-child(9) {
+    animation-delay: 4.5s;
   }
 
 /* ANIMATION DESKTOP */
@@ -129,6 +134,9 @@ export default {
   }
   .card:nth-child(9) {
     animation-delay: 4s;
+  }
+  .card:nth-child(10) {
+    animation-delay: 4.5s;
   }
 }
 </style>

@@ -995,7 +995,7 @@ video {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
-/* Hieroglyphs Regular */
+/* Alien Hieroglyphs */
 
 @font-face {
   font-family: 'Hieroglyphs';
@@ -1009,49 +1009,35 @@ video {
 
 :root {
   --bg-color: #fff;
-  /* default background color */
   --text-color: #000;
-  /* default text color */
   --border-color: 6, 182, 212;
-  /* Cyan */
   --base-border-color: #3f3f46;
-  /* Gray */
   --highlighted-text-color: 6, 182, 212;
 }
 
 .theme-cyan {
   --highlighted-text-color: 6, 182, 212;
-  /* Cyan */
   --border-color: 6, 182, 212;
-  /* Cyan */
 }
 
 .theme-purple {
   --highlighted-text-color: 147, 51, 234;
-  /* Purple */
   --border-color: 147, 51, 234;
-  /* Purple */
 }
 
 .theme-orange {
   --highlighted-text-color: 249, 115, 22;
-  /* Orange */
   --border-color: 249, 115, 22;
-  /* Orange */
 }
 
 .theme-pink {
   --highlighted-text-color: 219, 39, 119;
-  /* Pink */
   --border-color: 219, 39, 119;
-  /* Pink */
 }
 
 .theme-green {
   --highlighted-text-color: 22, 163, 74;
-  /* Green */
   --border-color: 22, 163, 74;
-  /* Green */
 }
 
 .border-theme {
@@ -1131,6 +1117,7 @@ video {
     "Playground"
     "Animation"
     "Contact"
+    "SpotifyPlaylist"
     "Timezone"
 }
 
@@ -1140,7 +1127,7 @@ video {
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(8, 1fr);
     gap: 15px 15px;
     grid-auto-flow: row;
@@ -1151,8 +1138,8 @@ video {
       "Hello Hello Hello AboutMe"
       "Contact Resume Resume AboutMe"
       "Contact Resume Resume AboutMe"
-      "Contact Now Playground Animation"
-      "Contact Now Bubbles Timezone"
+      "Contact Now Playground  Timezone"
+      "SpotifyPlaylist Now Animation  Bubbles"
   }
 }
 
@@ -1177,12 +1164,12 @@ video {
     z-index: 0;
   }
 
-  .lg\:col-span-2 {
-    grid-column: span 2 / span 2;
-  }
-
   .lg\:col-span-3 {
     grid-column: span 3 / span 3;
+  }
+
+  .lg\:col-span-4 {
+    grid-column: span 4 / span 4;
   }
 
   .lg\:mb-0 {

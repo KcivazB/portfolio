@@ -48,33 +48,30 @@ export default {
 <style scoped>
 .container-list {
   width: 100%;
-  max-width: 1200px; /* Adjust as needed based on your design */
+  max-width: 1200px; 
 }
 
 .card {
-  width: 100%; /* Ensures cards take full width of their container */
-  max-width: 600px; /* Adjust max-width as per your design */
+  width: 100%;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .logo-container {
-  /* Flex container for logo, occupying 1/3 of the card width */
   width: 100%;
 }
 
 .logo-icon {
-  /* Adjust the max-width or height as per your logo size requirements */
   max-width: 30%;
   height: auto;
 }
 
 .text-container {
-  /* Flex container for text content, occupying 2/3 of the card width */
   width: 100%;
 }
 
 .highlighted-text {
-  color: #fbbf24; /* Example of highlighting text */
+  color: #fbbf24;
 }
 </style>
