@@ -75,67 +75,67 @@ export default {
   }
 
   /* ANIMATION MOBILE */
-  .card:nth-child(1) {
+  .card:nth-child(1) {  /* HELLO */
     animation-delay: 0s;
   }
-  .card:nth-child(2) {
+  .card:nth-child(2) { /* ABOUTME */
     animation-delay: 0.5s;
   }
-  .card:nth-child(8) {
+  .card:nth-child(9) { /* BUBBLES */
     animation-delay: 1s;
   }
-  .card:nth-child(4) {
+  .card:nth-child(4) { /* RESUME */
     animation-delay: 1.5s;
   }
-  .card:nth-child(5) {
+  .card:nth-child(6) { /* NOW */
     animation-delay: 2s;
   }
-  .card:nth-child(6) {
+  .card:nth-child(7) { /* PLAYGROUND */
     animation-delay: 2.5s;
   }
-  .card:nth-child(7) {
+  .card:nth-child(8) { /* ANIMATION */
     animation-delay: 3s;
   }
-  .card:nth-child(3) {
+  .card:nth-child(3) { /* CONTACT */
     animation-delay: 3.5s;
   }
-  .card:nth-child(10) {
+  .card:nth-child(5) { /* SPOTIFYPLAYLIST */
     animation-delay: 4s;
   }
-  .card:nth-child(9) {
+  .card:nth-child(10) { /* TIMEZONE */
     animation-delay: 4.5s;
   }
 
 /* ANIMATION DESKTOP */
 @media (min-width: 1024px) {
-    .card:nth-child(1) {
+    .card:nth-child(1) { /* HELLO */
     animation-delay: 0s;
   }
-  .card:nth-child(2) {
+  .card:nth-child(2) { /* ABOUTME */
     animation-delay: 0.5s;
   }
-  .card:nth-child(3) {
+  .card:nth-child(3) { /* CONTACT */
     animation-delay: 1s;
   }
-  .card:nth-child(4) {
+  .card:nth-child(4) { /* RESUME */
     animation-delay: 1.5s;
   }
-  .card:nth-child(5) {
+  .card:nth-child(5) { /* SPOTIFYPLAYLIST */
     animation-delay: 2s;
   }
-  .card:nth-child(6) {
+  .card:nth-child(6) { /* NOW */
     animation-delay: 2.5s;
   }
-  .card:nth-child(7) {
+  .card:nth-child(7) { /* PLAYGROUND */
     animation-delay: 3s;
   }
-  .card:nth-child(8) {
+  .card:nth-child(8) { /* ANIMATION */
     animation-delay: 3.5s;
   }
-  .card:nth-child(9) {
+  .card:nth-child(9) { /* BUBBLES */
     animation-delay: 4s;
   }
-  .card:nth-child(10) {
+  .card:nth-child(10) { /* TIMEZONE */
     animation-delay: 4.5s;
   }
 }

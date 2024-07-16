@@ -3,7 +3,7 @@
       "id": 0,
       "name": "Palbro",
       "site": "https://palbro.virgilebaisnee.fr",
-      "githublink" : "https://github.com/ZavickB/PalBro",
+      "githublink" : "https://github.com/KcivazB/PalBro",
       "icon": "palbro.png",
       "shortDesc": {
         "en": "A Palworld Companion",
@@ -47,7 +47,7 @@
       "id": 1,
       "name": "Concerto",
       "site": "https://concerto.virgilebaisnee.fr/",
-      "githublink" : "https://github.com/ZavickB/Concerto",
+      "githublink" : "https://github.com/KcivazB/Concerto",
       "icon": "concerto.png",
       "shortDesc": {
         "en": "A Project Management Tool",

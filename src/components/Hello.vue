@@ -19,7 +19,7 @@
       <div class="text-bottom text-xl">{{ $t('hello_passionate') }}</div>
       <div class="buttons-row z-10 w-1/2">
         <div class="flex flex-wrap gap-4 mt-10"> 
-          <a href="https://github.com/ZavickB" aria-label="github profile" target="_blank">
+          <a href="https://github.com/KcivazB" aria-label="github profile" target="_blank">
             <button class="px-5 py-2 border-theme-button rounded-lg hover-border-theme-button hover-highlighted-button">
               <svg width="1em" height="1em" viewBox="0 0 24 24" class="h-6" data-icon="ri:github-fill">
                 <symbol id="ai:ri:github-fill">
