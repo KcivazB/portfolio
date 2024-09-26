@@ -1,91 +1,153 @@
 [
-    {
-      "id": 0,
-      "name": "Palbro",
-      "site": "https://palbro.virgilebaisnee.fr",
-      "githublink" : "https://github.com/KcivazB/PalBro",
-      "icon": "palbro.png",
-      "shortDesc": {
-        "en": "A Palworld Companion",
-        "fr": "Un compagnon pour Palworld"
-      },
-      "desc": {
-        "en": [
-          "Welcome to the world of PalBro, an innovative companion app for Palworld fans.",
-          "Inspired by the Pokédex, PalBro enhances the gaming experience with detailed info on every Pal."
-        ],
-        "fr": [
-          "Bienvenue dans le monde de PalBro, une application compagnon innovante pour les fans de Palworld.",
-          "Inspiré par le Pokédex, PalBro améliore l'expérience de jeu avec des informations détaillées sur chaque Pal."
-        ]
-      },
-      "functionalities": {
-        "en": [
-          "Comprehensive Pal Database: Access names, numbers, stats, attacks, descriptions, drops, and spawn points.",
-          "Capture Tracking: Track captures bonuses for each Pal up to 10.",
-          "Management of Pals: List obtained and obtainable Pals based on your collection.",
-          "Breeding and Combinations: Discover combinations to obtain new species.",
-          "Item Search: Find which Pals drop the items you need.",
-          "Multi-Game Handling: Track progression across multiple game servers using the gamepad icon in the top bar."
-        ],
-        "fr": [
-          "Base de données complète des Pal : Accédez aux noms, numéros, statistiques, attaques, descriptions, drops et points d'apparition.",
-          "Suivi des captures : Suivez les bonus de captures pour chaque Pal jusqu'à 10.",
-          "Gestion des Pals : Listez les Pals obtenus et obtenables en fonction de votre collection.",
-          "Élevage et combinaisons : Découvrez les combinaisons pour obtenir de nouvelles espèces.",
-          "Recherche d'objets : Trouvez quels Pals laissent tomber les objets dont vous avez besoin.",
-          "Gestion multi-jeux : Suivez la progression sur plusieurs serveurs de jeu en utilisant l'icône de la manette dans la barre supérieure."
-        ]
-      },
-      "technos": {
-        "back": ["Node.js"],
-        "front": ["React"],
-        "other": []
-      }
+  {
+    "id": 0,
+    "name": "Concerto",
+    "site": "https://concerto.virgilebaisnee.fr/",
+    "githublink" : "https://github.com/KcivazB/Concerto",
+    "icon": "concerto.png",
+    "shortDesc": {
+      "en": "A Project Management Tool",
+      "fr": "Un outil de gestion de projet"
     },
-    {
-      "id": 1,
-      "name": "Concerto",
-      "site": "https://concerto.virgilebaisnee.fr/",
-      "githublink" : "https://github.com/KcivazB/Concerto",
-      "icon": "concerto.png",
-      "shortDesc": {
-        "en": "A Project Management Tool",
-        "fr": "Un outil de gestion de projet"
-      },
-      "desc": {
-        "en": [
-          "Introducing Concerto, a personal development project management tool designed to streamline your workflow.",
-          "Concerto allows you to jot down project ideas, organize tasks, and allocate time efficiently, all within a user-friendly interface."
-        ],
-        "fr": [
-          "Présentation de Concerto, un outil de gestion de projet de développement personnel conçu pour simplifier votre flux de travail.",
-          "Concerto vous permet de noter des idées de projets, d'organiser des tâches et de répartir le temps efficacement, le tout dans une interface conviviale."
-        ]
-      },
-      "functionalities": {
-        "en": [
-          "Idea Management: Easily document and categorize new project ideas.",
-          "Task Management: Break down projects into tasks, set priorities, and track progress.",
-          "Time Allocation: Assign estimated and actual time to tasks for better planning and retrospection.",
-          "Authentication: Secure login using OAuth."
-        ],
-        "fr": [
-          "Gestion des idées : Documentez et catégorisez facilement de nouvelles idées de projets.",
-          "Gestion des tâches : Décomposez les projets en tâches, définissez les priorités et suivez les progrès.",
-          "Répartition du temps : Assignez du temps estimé et réel aux tâches pour une meilleure planification et rétrospection.",
-          "Authentification : Connexion sécurisée utilisant OAuth."
-        ]
-      },
-      "toCome": {
-        "en": "Real-time Metrics: Monitor project metrics and progress with integrated Grafana dashboards.",
-        "fr": "Métriques en temps réel : Surveillez les métriques de projet et les progrès avec des tableaux de bord Grafana intégrés."
-      },
-      "technos": {
-        "back": ["Symfony", "MySQL"],
-        "front": ["JavaScript", "Bootstrap", "Twig"],
-        "other": ["Docker", "Grafana", "OAuth"]
-      }
+    "desc": {
+      "en": [
+        "Introducing Concerto, a personal development project management tool designed to streamline your workflow.",
+        "Concerto allows you to jot down project ideas, organize tasks, and allocate time efficiently, all within a user-friendly interface."
+      ],
+      "fr": [
+        "Présentation de Concerto, un outil de gestion de projet de développement personnel conçu pour simplifier votre flux de travail.",
+        "Concerto vous permet de noter des idées de projets, d'organiser des tâches et de répartir le temps efficacement, le tout dans une interface conviviale."
+      ]
+    },
+    "functionalities": {
+      "en": [
+        "Idea Management: Easily document and categorize new project ideas.",
+        "Task Management: Break down projects into tasks, set priorities, and track progress.",
+        "Time Allocation: Assign estimated and actual time to tasks for better planning and retrospection.",
+        "Authentication: Secure login using OAuth."
+      ],
+      "fr": [
+        "Gestion des idées : Documentez et catégorisez facilement de nouvelles idées de projets.",
+        "Gestion des tâches : Décomposez les projets en tâches, définissez les priorités et suivez les progrès.",
+        "Répartition du temps : Assignez du temps estimé et réel aux tâches pour une meilleure planification et rétrospection.",
+        "Authentification : Connexion sécurisée utilisant OAuth."
+      ]
+    },
+    "toCome": {
+      "en": [
+        "Real-time Metrics: Monitor project metrics and progress with integrated Grafana dashboards."
+      ],
+      "fr": [
+        "Métriques en temps réel : Surveillez les métriques de projet et les progrès avec des tableaux de bord Grafana intégrés."
+      ]
+    },
+    "technos": {
+      "back": ["Symfony", "MySQL"],
+      "front": ["JavaScript", "Bootstrap", "Twig"],
+      "other": ["Docker", "Grafana", "OAuth"]
     }
-  ]
-  
+  },
+  {
+    "id": 1,
+    "name": "Palbro",
+    "site": "https://palbro.virgilebaisnee.fr",
+    "githublink" : "https://github.com/KcivazB/PalBro",
+    "icon": "palbro.png",
+    "shortDesc": {
+      "en": "A Palworld Companion",
+      "fr": "Un compagnon pour Palworld"
+    },
+    "desc": {
+      "en": [
+        "Welcome to the world of PalBro, an innovative companion app for Palworld fans.",
+        "Inspired by the Pokédex, PalBro enhances the gaming experience with detailed info on every Pal."
+      ],
+      "fr": [
+        "Bienvenue dans le monde de PalBro, une application compagnon innovante pour les fans de Palworld.",
+        "Inspiré par le Pokédex, PalBro améliore l'expérience de jeu avec des informations détaillées sur chaque Pal."
+      ]
+    },
+    "functionalities": {
+      "en": [
+        "Comprehensive Pal Database: Access names, numbers, stats, attacks, descriptions, drops, and spawn points.",
+        "Capture Tracking: Track captures bonuses for each Pal up to 10.",
+        "Management of Pals: List obtained and obtainable Pals based on your collection.",
+        "Breeding and Combinations: Discover combinations to obtain new species.",
+        "Item Search: Find which Pals drop the items you need.",
+        "Multi-Game Handling: Track progression across multiple game servers using the gamepad icon in the top bar."
+      ],
+      "fr": [
+        "Base de données complète des Pal : Accédez aux noms, numéros, statistiques, attaques, descriptions, drops et points d'apparition.",
+        "Suivi des captures : Suivez les bonus de captures pour chaque Pal jusqu'à 10.",
+        "Gestion des Pals : Listez les Pals obtenus et obtenables en fonction de votre collection.",
+        "Élevage et combinaisons : Découvrez les combinaisons pour obtenir de nouvelles espèces.",
+        "Recherche d'objets : Trouvez quels Pals laissent tomber les objets dont vous avez besoin.",
+        "Gestion multi-jeux : Suivez la progression sur plusieurs serveurs de jeu en utilisant l'icône de la manette dans la barre supérieure."
+      ]
+    },
+    "technos": {
+      "back": ["Node.js"],
+      "front": ["React"],
+      "other": []
+    }
+  },
+  {
+    "id": 2,
+    "name": "Rookie CE",
+    "site": null,
+    "screenshots": [
+      "rookie_menu_1.png",
+      "rookie_game_1.png",
+      "rookie_game_2.png",
+      "rookie_fen_1.png",
+      "rookie_fen_2.png",
+      "rookie_theme_1.png",
+      "rookie_theme_2.png"
+    ],
+    "githublink" : "https://github.com/KcivazB/rookie-chess-engine",
+    "icon": "rookie.jpg",
+    "shortDesc": {
+      "en": "A Python-based Chess Engine",
+      "fr": "Un moteur d'échecs basé sur Python"
+    },
+    "desc": {
+      "en": [
+        "Rookie Chess Engine is a learning project for exploring move search logic and Python development.",
+        "Built using a piece-centric representation and advanced algorithms for optimal move calculation."
+      ],
+      "fr": [
+        "Le moteur d'échecs Rookie est un projet d'apprentissage pour explorer la logique de recherche de coups et le développement en Python.",
+        "Construit à l'aide d'une représentation centrée sur les pièces et d'algorithmes avancés pour le calcul optimal des coups."
+      ]
+    },
+    "functionalities": {
+      "en": [
+        "Alpha-Beta Pruned NegaMax: Leverages alpha-beta pruning to improve decision-making speed.",
+        "Move Ordering: Optimizes search by prioritizing promising moves.",
+        "Iterative Deepening: Time-limited searches with progressively deeper analysis."
+      ],
+      "fr": [
+        "NegaMax avec élagage Alpha-Beta : Utilise l'élagage alpha-bêta pour accélérer la prise de décision.",
+        "Tri des coups : Optimise la recherche en priorisant les coups prometteurs.",
+        "Profondeur itérative : Recherches limitées dans le temps avec une analyse de plus en plus approfondie."
+      ]
+    },
+    "toCome": {
+      "en": [
+        "Timed Games: Support for timed matches.",
+        "Improved Move Search: Better move evaluation.",
+        "PGN Opening Books: Use opening book strategies."
+      ],
+      "fr": [
+        "Parties chronométrées : Support pour les parties chronométrées.",
+        "Recherche de coups : Meilleure évaluation des coups.",
+        "Livres PGN : Utilisation des stratégies d'ouverture en PGN."
+      ]
+    },
+    "technos": {
+      "back": ["Python"],
+      "front": ["Pygame"],
+      "other": ["Docker"]
+    }
+  }  
+]

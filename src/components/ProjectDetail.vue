@@ -20,7 +20,7 @@
         
         <div v-if="project.toCome" class="text-sm mt-4 p-4 bg-zinc-800 rounded-md">
           <div class="font-semibold mb-2">{{ $t('projects_to_come') }}</div>
-          <p>{{ project.toCome[currentLocale] }}</p>
+          <li v-for="toCome in project.toCome[currentLocale]" :key="toCome">{{ toCome }}</li>
         </div>
 
         <div class="row flex justify-center">
@@ -44,25 +44,51 @@
       </div>
 
       <div class="embed-card bg-zinc-950 shadow-md rounded-lg p-6 flex justify-center items-center lg:col-span-4">
-        <iframe :src="project.site" frameborder="0" class="iframed rounded-md"></iframe>
+        <div v-if="project.site">
+          <iframe :src="project.site" frameborder="0" class="iframed rounded-md"></iframe>
+        </div>
+        <div v-else-if="project.screenshots" class="place-content-between">
+            <Carousel id="gallery" :items-to-show="1" :wrap-around="false" v-model="currentSlide">
+              <Slide v-for="(screenshot, index) in project.screenshots" :key="index">
+                <div class="carousel__item">
+                  <img :src="`/rookie_ce/${screenshot}`" alt="A rookie chess preview" >
+                </div>
+              </Slide>
+          </Carousel>
+
+          <Carousel
+            id="thumbnails"
+            :items-to-show="4"
+            :wrap-around="true"
+            v-model="currentSlide"
+            ref="carousel"
+            class="mt-5"
+          >
+            <Slide v-for="(screenshot, index) in project.screenshots" :key="screenshot">
+              <div class="carousel__item" @click="slideTo(index)">
+                <img :src="`/rookie_ce/${screenshot}`" alt="A rookie chess preview">
+              </div>
+            </Slide>
+          </Carousel>
+        </div>
       </div>
 
       <div v-if="project.technos.back && project.technos.back.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_backend_technos') }}</div>
         <div class="flex">
-          <img v-for="tech in project.technos.back" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :alt="`${tech}`">
+          <img v-for="tech in project.technos.back" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :title="tech" :alt="`${tech}`">
         </div>
       </div>
       <div v-if="project.technos.front && project.technos.front.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_frontend_technos') }}</div>
         <div class="flex">
-          <img v-for="tech in project.technos.front" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :alt="`${tech}`">
+          <img v-for="tech in project.technos.front" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :title="tech" :alt="`${tech}`">
         </div>
       </div>
       <div v-if="project.technos.other && project.technos.other.length" class="technology-card shadow-md rounded-lg p-6 mb-6 lg:mb-0 lg:col-span-3">
         <div class="text-2xl font-semibold mb-4">{{ $t('projects_other_technos') }}</div>
         <div class="flex">
-          <img v-for="tech in project.technos.other" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :alt="`${tech}`">
+          <img v-for="tech in project.technos.other" :key="tech" :src="`/icons/${tech}.png`" class="tech-icon max-w-12 max-h-12 mx-auto" :title="tech" :alt="`${tech}`">
         </div>
       </div>
     </div>
@@ -71,20 +97,34 @@
 
 <script>
 import i18next from 'i18next';
+import { Carousel, Slide } from 'vue3-carousel'
+import 'vue3-carousel/dist/carousel.css'
 
 export default {
   name: 'ProjectDetail',
   props: {
     project: {
       type: Object,
-      required: true
+      required: true,
     }
   },
+  data: () => ({
+    currentSlide: 0,
+  }),
   computed: {
     currentLocale() {
       return i18next.language.split('-')[0];
     }
-  }
+  },
+  components: {
+    Carousel,
+    Slide,
+  },
+  methods: {
+    slideTo(val) {
+      this.currentSlide = val
+    },
+  },
 };
 </script>
 

@@ -13,7 +13,7 @@
           class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950 text-center flex items-center justify-center">
           <router-link :to="{ name: 'ProjectDetail', params: { id: project.id } }" class="flex w-full flex-row items-center">
             <div class="logo-container flex items-center justify-center w-1/3">
-              <img class="logo-icon" :src="`/logos/${project.icon}`" alt="Project Logo">
+              <img class="logo-icon" :src="`/logos/${project.icon}`" alt="Project Logo"  :title="project.name">
             </div>
             <div class="text-container w-2/3 px-4">
               <p class="text-2xl font-bold mb-2">{{ project.name }}</p>
@@ -51,12 +51,40 @@ export default {
   max-width: 1200px; 
 }
 
+@keyframes slideIn {
+    from {
+      transform: translateY(10%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
 .card {
   width: 100%;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 12px;
+  color: #d6d6d6;
+  opacity: 0;
+  animation: slideIn 0.5s ease-out forwards;
 }
+
+/* ANIMATION MOBILE */
+.card:nth-child(1) {  /* HELLO */
+  animation-delay: 0s;
+}
+.card:nth-child(2) { /* ABOUTME */
+  animation-delay: 0.5s;
+}
+.card:nth-child(3) { /* BUBBLES */
+  animation-delay: 1s;
+}
+  
+
 
 .logo-container {
   width: 100%;

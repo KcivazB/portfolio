@@ -85,6 +85,11 @@
         "type": "Back"
     },
     {
+        "name": "Pygame",
+        "icon": "Pygame.png",
+        "type": "Front"
+    },
+    {
         "name": "React",
         "icon": "React.png",
         "type": "Front"

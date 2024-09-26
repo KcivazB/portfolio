@@ -12,7 +12,7 @@ export default {
 
 <template>
   <router-link :to="{ name: 'Projects' }" class="flex w-full">
-    <div class="Playground flex justify-center items-center ">
+    <div class="Playground flex justify-center items-center">
       <div class="text-xl text-white text-center flex items-center justify-between hover-highlighted-text">
         <p class="mx-2">{{ $t('projects_explore') }}</p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" alt="Demo" class="w-6 h-6 ml-1">
