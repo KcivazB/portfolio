@@ -96,14 +96,56 @@
     "name": "Rookie CE",
     "site": null,
     "screenshots": [
-      "rookie_menu_1.png",
-      "rookie_game_1.png",
-      "rookie_game_2.png",
-      "rookie_fen_1.png",
-      "rookie_fen_2.png",
-      "rookie_theme_1.png",
-      "rookie_theme_2.png"
-    ],
+      {
+        "src": "rookie_menu_1.png",
+        "desc": {
+          "en": "Main menu interface of the chess application, featuring options for starting a new game, loading a FEN string, adjusting settings, and selecting themes.",
+          "fr": "Interface du menu principal de l'application d'échecs, présentant des options pour démarrer une nouvelle partie, charger une chaîne FEN, ajuster les paramètres et sélectionner des thèmes."
+        }
+      },
+      {
+        "src": "rookie_game_1.png",
+        "desc": {
+          "en": "Initial game state showcasing the standard chessboard layout with pieces in their starting positions, ready for play.",
+          "fr": "État initial de la partie présentant la disposition standard de l'échiquier avec les pièces dans leurs positions de départ, prêtes à jouer."
+        }
+      },
+      {
+        "src": "rookie_game_2.png",
+        "desc": {
+          "en": "In-game view illustrating a player's piece selection and the display of valid moves, highlighted on the chessboard.",
+          "fr": "Vue en jeu illustrant la sélection d'une pièce par un joueur et l'affichage des coups valides, mis en évidence sur l'échiquier."
+        }
+      },
+      {
+        "src": "rookie_fen_1.png",
+        "desc": {
+          "en": "Menu screen showing the FEN (Forsyth-Edwards Notation) input feature, allowing users to load specific board positions for analysis or custom play.",
+          "fr": "Écran du menu montrant la fonctionnalité d'entrée FEN (Forsyth-Edwards Notation), permettant aux utilisateurs de charger des positions spécifiques pour l'analyse ou le jeu personnalisé."
+        }
+      },
+      {
+        "src": "rookie_fen_2.png",
+        "desc": {
+          "en": "Chessboard displaying a custom position set by the user through a FEN string input, reflecting the loaded configuration on the board.",
+          "fr": "Échiquier affichant une position personnalisée définie par l'utilisateur via la saisie d'une chaîne FEN, reflétant la configuration chargée sur l'échiquier."
+        }
+      },
+      {
+        "src": "rookie_theme_1.png",
+        "desc": {
+          "en": "Menu interface showcasing the theme selection feature, enabling users to modify the visual appearance of the chessboard and pieces.",
+          "fr": "Interface du menu montrant la fonctionnalité de sélection de thème, permettant aux utilisateurs de modifier l'apparence visuelle de l'échiquier et des pièces."
+        }
+      },
+      {
+        "src": "rookie_theme_2.png",
+        "desc": {
+          "en": "In-game view of an advanced chess position, with the board and pieces styled according to the selected theme.",
+          "fr": "Vue en jeu d'une position d'échecs avancée, avec l'échiquier et les pièces stylisés selon le thème sélectionné."
+        }
+      }
+    ], 
     "githublink" : "https://github.com/KcivazB/rookie-chess-engine",
     "icon": "rookie.jpg",
     "shortDesc": {

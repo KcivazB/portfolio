@@ -43,15 +43,15 @@
 
       </div>
 
-      <div class="embed-card bg-zinc-950 shadow-md rounded-lg p-6 flex justify-center items-center lg:col-span-4">
-        <div v-if="project.site">
-          <iframe :src="project.site" frameborder="0" class="iframed rounded-md"></iframe>
-        </div>
-        <div v-else-if="project.screenshots" class="place-content-between">
-            <Carousel id="gallery" :items-to-show="1" :wrap-around="false" v-model="currentSlide">
+      <div v-if="project.site" class="embed-card bg-zinc-950 shadow-md rounded-lg p-6 flex justify-center items-center lg:col-span-4">
+        <iframe :src="project.site" frameborder="0" class="iframed rounded-md"></iframe>
+      </div>
+      <div v-else-if="project.screenshots"  class="embed-card bg-zinc-950 shadow-md rounded-lg p-6 flex justify-center items-center lg:col-span-4">
+        <div class="place-content-between">
+          <Carousel id="gallery" :items-to-show="1" :wrap-around="false" :autoplay="2500" :transition="700" :pauseAutoplayOnHover="true" v-model="currentSlide">
               <Slide v-for="(screenshot, index) in project.screenshots" :key="index">
                 <div class="carousel__item">
-                  <img :src="`/rookie_ce/${screenshot}`" alt="A rookie chess preview" >
+                  <img :src="`/rookie_ce/${screenshot.src}`" alt="A rookie chess preview"  @click="showModal = true;screenshotObj=screenshot" ><!-- Implement the show modal and the modal-->
                 </div>
               </Slide>
           </Carousel>
@@ -66,7 +66,7 @@
           >
             <Slide v-for="(screenshot, index) in project.screenshots" :key="screenshot">
               <div class="carousel__item" @click="slideTo(index)">
-                <img :src="`/rookie_ce/${screenshot}`" alt="A rookie chess preview">
+                <img :src="`/rookie_ce/${screenshot.src}`" alt="A rookie chess preview">
               </div>
             </Slide>
           </Carousel>
@@ -93,11 +93,15 @@
       </div>
     </div>
   </div>
+
+  <ImageModal v-if="showModal" @close="showModal = false" :imgSrc="`/rookie_ce/${screenshotObj.src}`" :imgDesc="screenshotObj.desc[currentLocale]"/>
+
 </template>
 
 <script>
 import i18next from 'i18next';
 import { Carousel, Slide } from 'vue3-carousel'
+import ImageModal from './ImageModal.vue';
 import 'vue3-carousel/dist/carousel.css'
 
 export default {
@@ -110,6 +114,8 @@ export default {
   },
   data: () => ({
     currentSlide: 0,
+    showModal: false,
+    screenshotObj: null
   }),
   computed: {
     currentLocale() {
@@ -119,6 +125,7 @@ export default {
   components: {
     Carousel,
     Slide,
+    ImageModal
   },
   methods: {
     slideTo(val) {
