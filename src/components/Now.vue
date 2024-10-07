@@ -12,7 +12,7 @@
       <ul class="projects list-disc px-5">
         <div v-for="project in projects" :key="project.id">
           <li class="hover-highlighted-text"> 
-            <router-link :to="{ name: 'ProjectDetail', params: { id: project.id } }" class="flex w-full">{{ $t(project.name) }}</router-link>
+            <router-link :to="{ name: 'ProjectDetail', params: { id: project.id } }" class="flex w-full">{{ project.name }}</router-link>
           </li>
         </div>
       </ul>
