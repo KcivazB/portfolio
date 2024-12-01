@@ -21,4 +21,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: ghcr.io/KcivazB/portfolio-vue:latest
+          tags: ghcr.io/kcivazb/portfolio:latest
