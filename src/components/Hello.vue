@@ -2,7 +2,7 @@
   <div class="Hello relative" v-if="$i18next.isInitialized">
     <div class="left-content z-10">
       <div class="text-top">
-        <div class="text-5xl">{{ $t('hello_hi') }} <span class="font-bold highlighted-text"> Virgile </span></div>
+        <div class="text-5xl">{{ $t('hello_hi') }} <span class="font-bold highlighted-text"> Brigile </span></div>
       </div>
       <div class="text-mid">
         <span class="flex text-xl">{{ $t('hello_im') }}&nbsp;
