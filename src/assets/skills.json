@@ -13,17 +13,17 @@
         "name": "Docker",
         "icon": "Docker.png",
         "type": "Other"
-    },    
+    },  
+    {
+        "name": "FluxCD",
+        "icon": "FluxCD.png",
+        "type": "Other"
+    },      
     {
         "name": "GitHub",
         "icon": "GitHub.png",
         "type": "Other"
-    },    
-    {
-        "name": "GitLab",
-        "icon": "GitLab.png",
-        "type": "Other"
-    },    
+    },      
     {
         "name": "Go",
         "icon": "Go.png",
@@ -35,15 +35,15 @@
         "type": "Other"
     },    
     {
+        "name": "Helm",
+        "icon": "Helm.png",
+        "type": "Other"
+    },    
+    {
         "name": "HTML5",
         "icon": "HTML5.png",
         "type": "Front"
     },
-    {
-        "name": "Java",
-        "icon": "Java.png",
-        "type": "Back"
-    },  
     {
         "name": "JavaScript",
         "icon": "JavaScript.png",
@@ -53,7 +53,12 @@
         "name": "jQuery",
         "icon": "jQuery.png",
         "type": "Front"
-    },    
+    },
+    {
+        "name": "Kubernetes",
+        "icon": "Kubernetes.png",
+        "type": "Other"
+    },      
     {
         "name": "MySQL",
         "icon": "MySQL.png",
@@ -72,11 +77,6 @@
     {
         "name": "PostgresSQL",
         "icon": "PostgresSQL.png",
-        "type": "Other"
-    },
-    {
-        "name": "Postman",
-        "icon": "Postman.png",
         "type": "Other"
     },
     {
