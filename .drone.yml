@@ -1,5 +1,5 @@
 kind: pipeline
-type: docker
+type: kubernetes
 name: default
 
 steps:
@@ -13,4 +13,3 @@ steps:
       - docker build -t harbor.virgilebaisnee.fr/my-apps/my-portfolio:${DRONE_BUILD_NUMBER} .
       - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin harbor.virgilebaisnee.fr
       - docker push harbor.virgilebaisnee.fr/my-apps/my-portfolio:${DRONE_BUILD_NUMBER}
-      
