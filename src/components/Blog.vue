@@ -9,7 +9,7 @@
       </router-link>
 
       <div class="font-bold text-5xl text-center">{{ $t('blog_list') }}</div>
-      <div class="grid grid-cols-1 gap-4 mt-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10">
         <div
           v-for="article, index in articles"
           :key="article.id"
