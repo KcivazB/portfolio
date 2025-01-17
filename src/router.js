@@ -39,9 +39,20 @@ const routes = [
   }
 ];
 
+
+
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    // Si une position sauvegardée existe (par exemple, lors du retour en arrière), on la renvoie
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      // Sinon, on force un scroll en haut de la page
+      return { top: 0 };
+    }
+  }
 });
 
 export default router;
