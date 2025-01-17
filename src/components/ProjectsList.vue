@@ -8,9 +8,11 @@
       <div class="font-bold text-5xl text-center">{{ $t('projects_list') }}</div>
       <div class="grid grid-cols-1 gap-4 mt-10">
         <div 
-          v-for="project in projects" 
-          :key="project.id" 
-          class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950 text-center flex items-center justify-center">
+          v-for="project, index in projects" 
+            :key="project.id" 
+            class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950 text-center flex items-center justify-center"
+            :style="getCardStyle(index)"
+          >
           <router-link :to="{ name: 'ProjectDetail', params: { id: project.id } }" class="flex w-full flex-row items-center">
             <div class="logo-container flex items-center justify-center w-1/3">
               <img class="logo-icon" :src="`/logos/${project.icon}`" alt="Project Logo"  :title="project.name">
@@ -35,6 +37,13 @@ export default {
   data() {
     return {
       projects
+    }
+  },
+  methods: {
+    getCardStyle(index) {
+      return {
+        animationDelay: `${index * 0.5}s`
+      };
     }
   },
   computed: {
@@ -72,18 +81,6 @@ export default {
   opacity: 0;
   animation: slideIn 0.5s ease-out forwards;
 }
-
-/* ANIMATION MOBILE */
-.card:nth-child(1) {  /* HELLO */
-  animation-delay: 0s;
-}
-.card:nth-child(2) { /* ABOUTME */
-  animation-delay: 0.5s;
-}
-.card:nth-child(3) { /* BUBBLES */
-  animation-delay: 1s;
-}
-  
 
 
 .logo-container {

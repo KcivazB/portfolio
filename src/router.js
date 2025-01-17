@@ -5,6 +5,10 @@ import ProjectDetail from './components/ProjectDetail.vue';
 import ProjectsList from './components/ProjectsList.vue';
 import projects from './assets/projects.json';
 
+import Blog from './components/Blog.vue';
+import Article from './components/Article.vue';
+import articles from './assets/articles.json';
+
 const routes = [
   { 
     path: '/', 
@@ -21,6 +25,17 @@ const routes = [
     name: 'ProjectDetail',
     component: ProjectDetail,
     props: route => ({ project: projects[route.params.id] })
+  },
+  { 
+    path: '/blog',
+    name: 'Blog',
+    component: Blog,
+  },
+  {
+    path: '/articles/:id',
+    name: 'Article',
+    component: Article,
+    props: route => ({ article: articles.find(a => a.id === parseInt(route.params.id)) })
   }
 ];
 

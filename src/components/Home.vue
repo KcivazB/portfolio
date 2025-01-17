@@ -8,9 +8,9 @@
             <SpotifyPlaylist class="card p-2 border-theme hover-border-theme shadow-md bg-zinc-950" />
             <Now class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
             <Playground class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950"/>
+            <BlogTile class="card p-2 border-theme hover-border-theme shadow-md bg-zinc-950"/>
             <Animation class="card border-theme hover-border-theme shadow-md bg-zinc-950"/>
             <Bubbles class="card p-2 border-theme hover-border-theme shadow-md bg-zinc-950"/>
-            <Timezone class="card p-2 border-theme hover-border-theme shadow-md bg-zinc-950"/>
         </div>
   </div>
  
@@ -23,7 +23,7 @@ import Resume from './Resume.vue'
 import Contact from './Contact.vue'
 import Now from './Now.vue'
 import Animation from './Animation.vue'
-import Timezone from './Timezone.vue'
+import BlogTile from './BlogTile.vue'
 import Bubbles from './Bubbles.vue'
 import Playground from './Playground.vue'
 import SpotifyPlaylist from './SpotifyPlaylist.vue'
@@ -37,7 +37,7 @@ export default {
     Resume,
     Now,
     Animation,
-    Timezone,
+    BlogTile,
     Bubbles,
     Playground,
     SpotifyPlaylist
@@ -102,7 +102,7 @@ export default {
   .card:nth-child(5) { /* SPOTIFYPLAYLIST */
     animation-delay: 4s;
   }
-  .card:nth-child(10) { /* TIMEZONE */
+  .card:nth-child(10) { /*  */
     animation-delay: 4.5s;
   }
 
@@ -129,13 +129,13 @@ export default {
   .card:nth-child(7) { /* PLAYGROUND */
     animation-delay: 3s;
   }
-  .card:nth-child(8) { /* ANIMATION */
+  .card:nth-child(8) { /* BLOG */
     animation-delay: 3.5s;
   }
-  .card:nth-child(9) { /* BUBBLES */
+  .card:nth-child(9) { /* ANIMATION */
     animation-delay: 4s;
   }
-  .card:nth-child(10) { /* TIMEZONE */
+  .card:nth-child(10) { /* BUBBLES */
     animation-delay: 4.5s;
   }
 }

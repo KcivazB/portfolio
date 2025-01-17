@@ -662,12 +662,20 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
 
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
 }
 
 .mt-4 {
@@ -754,6 +762,10 @@ video {
   max-width: 3rem;
 }
 
+.max-w-4xl {
+  max-width: 56rem;
+}
+
 .max-w-screen-lg {
   max-width: 1024px;
 }
@@ -790,6 +802,10 @@ video {
   align-content: center;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .items-center {
   align-items: center;
 }
@@ -816,6 +832,18 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.space-y-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
 .overflow-y-auto {
   overflow-y: auto;
 }
@@ -840,6 +868,11 @@ video {
   border-width: 1px;
 }
 
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
@@ -848,6 +881,11 @@ video {
 .bg-zinc-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(39 39 42 / var(--tw-bg-opacity));
+}
+
+.bg-zinc-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
 }
 
 .bg-zinc-950 {
@@ -889,6 +927,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-8 {
+  padding: 2rem;
 }
 
 .px-2 {
@@ -942,6 +984,11 @@ video {
   line-height: 1;
 }
 
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -973,9 +1020,22 @@ video {
   font-style: italic;
 }
 
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.underline {
+  text-decoration-line: underline;
 }
 
 .opacity-50 {
@@ -991,6 +1051,12 @@ video {
 .shadow-md {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1102,7 +1168,7 @@ video {
   color: rgb(var(--highlighted-text-color))
 }
 
-#Home, #ProjectsList, #ProjectDetail {
+#Home, #ProjectsList, #ProjectDetail, #Blog, #Article {
   font-family: 'Urbanist';
   background-image: linear-gradient(
     to top,
@@ -1135,10 +1201,10 @@ video {
     "Resume"
     "Now"
     "Playground"
+    "BlogTile"
     "Animation"
     "Contact"
     "SpotifyPlaylist"
-    "Timezone"
 }
 
 @media (min-width: 1024px) {
@@ -1158,18 +1224,47 @@ video {
       "Hello Hello Hello AboutMe"
       "Contact Resume Resume AboutMe"
       "Contact Resume Resume AboutMe"
-      "Contact Now Playground  Timezone"
-      "SpotifyPlaylist Now Animation  Bubbles"
+      "Contact Now Playground  Animation"
+      "SpotifyPlaylist Now BlogTile  Bubbles"
   }
+}
+
+article blockquote {
+  border-left: 4px solid rgb(var(--highlighted-text-color));
+  padding-left: 1rem;
+  font-style: italic;
+  margin: 1rem 0;
+  color: #d1d1d1;
+}
+
+article strong {
+  color: rgb(var(--highlighted-text-color));
 }
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
 
+.hover\:bg-gray-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-zinc-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(63 63 70 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 640px) {
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) {

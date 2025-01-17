@@ -1,15 +1,15 @@
-kind: pipeline
-type: kubernetes
-name: default
+# kind: pipeline
+# type: kubernetes
+# name: default
 
-steps:
-  - name: build and push docker image
-    image: docker:20.10.7
-    environment:
-      DOCKER_USERNAME: ${DOCKER_USERNAME}
-      DOCKER_PASSWORD: ${DOCKER_PASSWORD}
-      DRONE_GITHUB_TOKEN: ${DRONE_GITHUB_TOKEN}
-    commands:
-      - docker build -t harbor.virgilebaisnee.fr/my-apps/my-portfolio:${DRONE_BUILD_NUMBER} .
-      - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin harbor.virgilebaisnee.fr
-      - docker push harbor.virgilebaisnee.fr/my-apps/my-portfolio:${DRONE_BUILD_NUMBER}
+# steps:
+#   - name: build and push docker image
+#     image: docker:20.10.7
+#     environment:
+#       DOCKER_USERNAME: ${DOCKER_USERNAME}
+#       DOCKER_PASSWORD: ${DOCKER_PASSWORD}
+#       DRONE_GITHUB_TOKEN: ${DRONE_GITHUB_TOKEN}
+#     commands:
+#       - docker build -t harbor.virgilebaisnee.fr/my-apps/my-portfolio:${DRONE_BUILD_NUMBER} .
+#       - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin harbor.virgilebaisnee.fr
+#       - docker push harbor.virgilebaisnee.fr/my-apps/my-portfolio:${DRONE_BUILD_NUMBER}

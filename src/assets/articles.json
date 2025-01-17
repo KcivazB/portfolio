@@ -1,0 +1,68 @@
+[
+  {
+    "id": 0,
+    "title": {
+      "en": "I created a blog !",
+      "fr": "J'ai créé un blog !"
+    },
+    "shortDesc": {
+      "en": "I finally did it: I created a blog on my website !",
+      "fr": "Ca y'est, j'ai sauté le pas : j'ai enfin créé un blog sur mon site internet !"
+    }
+  },
+  {
+    "id": 1,
+    "title": {
+      "en": "Introduction to My Homelab",
+      "fr": "Présentation de mon Homelab"
+    },
+    "shortDesc": {
+      "en": "What’s a homelab for and why does it matter ?",
+      "fr": "Un Homelab, pourquoi et quel intérêt ?"
+    }
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "Virtual Machines and Proxmox",
+      "fr": "Les VM et Proxmox"
+    },
+    "shortDesc": {
+      "en": "Learn about virtual machines and how to use Proxmox for managing them.",
+      "fr": "Apprenez à utiliser les machines virtuelles et à gérer les VM avec Proxmox."
+    }
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Containers and Docker",
+      "fr": "Les Containers et Docker"
+    },
+    "shortDesc": {
+      "en": "An introduction to containers and how Docker revolutionizes deployment.",
+      "fr": "Une introduction aux containers et comment Docker révolutionne le déploiement."
+    }
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "Orchestration and Kubernetes",
+      "fr": "L'orchestration et Kubernetes"
+    },
+    "shortDesc": {
+      "en": "Understanding container orchestration with Kubernetes.",
+      "fr": "Comprendre l'orchestration des containers avec Kubernetes."
+    }
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "Infrastructure and Terraform",
+      "fr": "Infrastructure et Terraform"
+    },
+    "shortDesc": {
+      "en": "How to manage infrastructure using Terraform.",
+      "fr": "Comment gérer l'infrastructure avec Terraform."
+    }
+  }
+]

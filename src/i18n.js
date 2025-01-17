@@ -33,7 +33,7 @@ i18next
             resume_source: new URL('./assets/cv-en.pdf', import.meta.url).href,
             now_header:"Now",
             now_current_activity: "Currently working on personal projects :",
-            projects_explore: "Click and discover my projects",
+            projects_explore: "Have a look at my projects",
             timezone_header: "Current Time",
             projects_list: " Personal Projects",
             projects_to_come: "Upcoming Features",
@@ -42,6 +42,9 @@ i18next
             projects_backend_technos: "Back-end",
             projects_frontend_technos: "Front-end",
             projects_other_technos: "Others",
+            blog_list: "Blog",
+            blog_explore: "Explore my blog",
+            blog_checkout: "Check out the last articles",
         }
       },
       fr: {
@@ -65,7 +68,7 @@ i18next
             resume_source: new URL('./assets/cv-fr.pdf', import.meta.url).href,
             now_header:"En ce moment",
             now_current_activity: "Je travaille sur des projets personnels :",
-            projects_explore: "Cliquez et découvrez mes projets",
+            projects_explore: "Découvrez mes projets",
             timezone_header: "Heure actuelle",
             projects_list: "Mes Projets Perso",
             projects_to_come: "Fonctionnalités à venir",
@@ -74,6 +77,9 @@ i18next
             projects_backend_technos: "Back-end",
             projects_frontend_technos: "Front-end",
             projects_other_technos: "Autres",
+            blog_list: "Blog",
+            blog_explore: "Explorez mon blog",
+            blog_checkout: "Consultez les derniers articles",
         }
       }
     }
