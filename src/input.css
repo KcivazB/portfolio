@@ -158,3 +158,22 @@ article blockquote {
 article strong {
   color: rgb(var(--highlighted-text-color));
 }
+
+/* Personnalisation des tailles pour les titres dans article */
+article h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color : rgb(var(--highlighted-text-color))
+}
+
+article h2 {
+  font-size: 2rem;
+  font-weight: semi-bold;
+  color : rgb(var(--highlighted-text-color))
+}
+
+article h3 {
+  font-size: 1.5rem;
+  font-weight: semi-bold;
+  color : rgb(var(--highlighted-text-color))
+}

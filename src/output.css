@@ -1236,6 +1236,26 @@ article strong {
   color: rgb(var(--highlighted-text-color));
 }
 
+/* Personnalisation des tailles pour les titres dans article */
+
+article h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color : rgb(var(--highlighted-text-color))
+}
+
+article h2 {
+  font-size: 2rem;
+  font-weight: semi-bold;
+  color : rgb(var(--highlighted-text-color))
+}
+
+article h3 {
+  font-size: 1.5rem;
+  font-weight: semi-bold;
+  color : rgb(var(--highlighted-text-color))
+}
+
 .hover\:cursor-pointer:hover {
   cursor: pointer;
 }
@@ -1249,11 +1269,6 @@ article strong {
   .sm\:text-4xl {
     font-size: 2.25rem;
     line-height: 2.5rem;
-  }
-
-  .sm\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
   }
 }
 

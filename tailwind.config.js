@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Urbanist', 'Hieroglyphs'],
-      },    },
+      },
+     },
   },
   plugins: [],
 }

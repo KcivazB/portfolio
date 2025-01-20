@@ -13,7 +13,7 @@
         </header>
 
         <!-- Markdown Content -->
-        <div v-html="renderedMarkdown" class="article-body text-sm sm:text-base leading-relaxed space-y-4">
+        <div v-html="renderedMarkdown" class="leading-relaxed space-y-4">
         </div>
       </article>
     </div>
@@ -28,12 +28,13 @@ export default {
   name: 'Article',
   props: {
     id: {
-      type: Number,
+      type: String,
       required: true,
     },
   },
   data: () => ({
     markdownContent: '',
+    title: '',
   }),
   computed: {
     currentLocale() {
@@ -65,9 +66,7 @@ export default {
 
       // Supprimer la première ligne du contenu (le titre) pour éviter la duplication
       this.markdownContent = lines.slice(1).join('\n'); // Le reste du contenu
-      
-      console.log("Contenu du markdown", this.markdownContent);
-    } catch (err) {
+      } catch (err) {
       console.error('Erreur lors du chargement de l’article:', err);
     }
   },
@@ -101,12 +100,6 @@ header h1 {
   color: #e0e0e0;
 }
 
-.article-body {
-  font-size: 1rem;
-  line-height: 1.8rem;
-  color: #d1d1d1;
-}
-
 article a {
   color: #4c9f70;
   text-decoration: none;
@@ -124,4 +117,5 @@ article a:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 </style>
