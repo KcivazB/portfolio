@@ -13,26 +13,26 @@ const routes = [
     component: Home 
   },
   { 
-    path: '/projects',
+    path: '/projects/',
     name: 'Projects',
     component: ProjectsList,
   },
   {
-    path: '/projects/:id',
+    path: '/projects/:id/',
     name: 'ProjectDetail',
     component: ProjectDetail,
     props: route => ({ project: projects[route.params.id] })
   },
   { 
-    path: '/blog',
+    path: '/blog/',
     name: 'Blog',
     component: Blog,
   },
   {
-    path: '/articles/:id',
+    path: '/articles/:id/',
     name: 'Article',
     component: Article,
-    props: route => ({ id: route.params.id })
+    props: route => ({ id: route.params.id }),
   }
 ];
 
