@@ -1,5 +1,5 @@
 # 1. Présentation de mon Homelab
-*Un Homelab, pourquoi et quel intérêt ?*
+_Un Homelab, pourquoi et quel intérêt ?_
 
 ## Introduction
 
