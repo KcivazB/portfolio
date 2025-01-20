@@ -10,7 +10,7 @@
         <div 
           v-for="project, index in projects" 
             :key="project.id" 
-            class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950 text-center flex items-center justify-center"
+            class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950 text-center flex items-center justify-center hover-highlighted-text"
             :style="getCardStyle(index)"
           >
           <router-link :to="{ name: 'ProjectDetail', params: { id: project.id } }" class="flex w-full flex-row items-center">
@@ -19,7 +19,7 @@
             </div>
             <div class="text-container w-2/3 px-4">
               <p class="text-2xl font-bold mb-2">{{ project.name }}</p>
-              <p>{{ project.shortDesc[currentLocale] }}</p>
+              <p class="text-gray-300">{{ project.shortDesc[currentLocale] }}</p>
             </div>
           </router-link>
         </div>

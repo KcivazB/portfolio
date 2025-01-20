@@ -13,16 +13,16 @@
         <div
           v-for="article, index in articles"
           :key="article.id"
-          class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950 flex items-center justify-center"
+          class="card p-5 border-theme hover-border-theme shadow-md bg-zinc-950 flex items-center justify-center hover-highlighted-text"
           :style="getCardStyle(index)"
         >
           <router-link
             :to="{ name: 'Article', params: { id: article.id } }"
-            class="flex w-full flex-row items-center"
+            class="flex w-full flex-row items-center " 
           >
             <div class="text-container flex flex-col items-start w-full px-4">
-              <p class="text-2xl font-bold mb-2">
-                {{ article.id }}. {{ article.title[currentLocale] }}
+              <p class="text-2xl font-bold mb-2 ">
+                {{ article.title[currentLocale] }}
               </p>
               <p class="text-base text-gray-300">{{ article.shortDesc[currentLocale] }}</p>
             </div>
@@ -35,26 +35,58 @@
 
 <script>
 import i18next from 'i18next';
-import articles from '../assets/articles.json';
 
 export default {
   name: 'Blog',
   data() {
     return {
-      articles,
+      articles: [],
     };
   },
   computed: {
     currentLocale() {
-      return i18next.language.split('-')[0];
+      return i18next.language.split('-')[0]; // Obtenir la langue actuelle
     },
   },
+  async mounted() {
+    await this.loadArticles();
+  },
   methods: {
+    async loadArticles() {
+      const articles = [];
+      const articleCount = 6; // Nombre d'articles
+      for (let i = 0; i < articleCount; i++) {
+        try {
+          const response = await fetch(`/articles/${i}/${this.currentLocale}.md`);
+          const markdownContent = await response.text();
+          
+          // Extraire la première et la deuxième ligne du markdown pour le titre et sous-titre
+          const lines = markdownContent.split('\n');
+          const title = lines[0].replace(/^#\s*/, '');
+          const shortDesc = lines[1].replace(/_/g, '').trim();
+
+          articles.push({
+            id: i,
+            title: {
+              en: title,
+              fr: title, // Vous pouvez ajouter la traduction si vous voulez la personnaliser
+            },
+            shortDesc: {
+              en: shortDesc,
+              fr: shortDesc, // Idem pour le sous-titre en français
+            },
+          });
+        } catch (error) {
+          console.error(`Erreur de chargement de l'article ${i}:`, error);
+        }
+      }
+      this.articles = articles;
+    },
     getCardStyle(index) {
       return {
-        animationDelay: `${index * 0.5}s` // Calcul automatique du délai d'animation
+        animationDelay: `${index * 0.5}s`,
       };
-    }
+    },
   },
 };
 </script>
@@ -66,16 +98,16 @@ export default {
 }
 
 @keyframes slideIn {
-    from {
-      transform: translateY(10%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+  from {
+    transform: translateY(10%);
+    opacity: 0;
   }
-  
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .card {
   width: 100%;
   max-width: 600px;
@@ -85,6 +117,36 @@ export default {
   color: #d6d6d6;
   opacity: 0;
   animation: slideIn 0.5s ease-out forwards;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 16px;
 }
 
+.text-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-container p {
+  margin: 0;
+}
+
+.text-container .text-2xl {
+  margin-bottom: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 </style>

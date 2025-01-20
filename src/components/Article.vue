@@ -9,7 +9,7 @@
       <article class="article-content bg-zinc-950 shadow-xl rounded-lg p-8 mb-8 space-y-6">
         <!-- Title -->
         <header class="text-center">
-          <h1 class="text-3xl sm:text-4xl font-bold mb-4">{{ article.title[currentLocale] }}</h1>
+          <h1 class="text-3xl sm:text-4xl font-bold mb-4">{{ title }}</h1>
         </header>
 
         <!-- Markdown Content -->
@@ -27,8 +27,8 @@ import markdownit from 'markdown-it';
 export default {
   name: 'Article',
   props: {
-    article: {
-      type: Object,
+    id: {
+      type: Number,
       required: true,
     },
   },
@@ -50,12 +50,21 @@ export default {
   },
   async mounted() {
     const locale = this.currentLocale;
-    const articleId = this.article.id;
+    const articleId = this.id;
 
     try {
       // Charger le fichier Markdown depuis les assets
       const response = await fetch(`/articles/${articleId}/${locale}.md`);
-      this.markdownContent = await response.text(); // Stocke le contenu markdown dans une variable
+      const markdownContent = await response.text(); // Stocke le contenu markdown dans une variable
+
+      // Séparer le contenu Markdown en lignes
+      const lines = markdownContent.split('\n');
+      
+      // Extraire le titre depuis la première ligne et supprimer le '#' (si présent)
+      this.title = lines[0].replace(/^#\s*/, ''); // Le titre de l'article
+
+      // Supprimer la première ligne du contenu (le titre) pour éviter la duplication
+      this.markdownContent = lines.slice(1).join('\n'); // Le reste du contenu
       
       console.log("Contenu du markdown", this.markdownContent);
     } catch (err) {

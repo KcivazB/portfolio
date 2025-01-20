@@ -1,3 +1,7 @@
+# 1. Homelab Introduction
+_What’s a homelab for and why does it matter ?_
+
+
 Let's start from the beginning.
 
 You may be wondering what a homelab is. If that's not the case, feel free to skip to the next section. Otherwise, I strongly encourage you to read the following passage.

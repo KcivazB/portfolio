@@ -1,4 +1,5 @@
-Ca y'est, j'ai sauté le pas : j'ai enfin créé un blog sur mon site internet !
+# 0. J'ai créé un blog !
+_Ca y'est, j'ai sauté le pas : j'ai enfin créé un blog sur mon site internet !_
 
 L'idée de ce blog est avant tout de documenter les technologies et pratiques mises en œuvre dans mes différents projets personnels. 
 

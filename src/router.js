@@ -1,13 +1,10 @@
-// router.js
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from './components/Home.vue';
 import ProjectDetail from './components/ProjectDetail.vue';
 import ProjectsList from './components/ProjectsList.vue';
-import projects from './assets/projects.json';
-
 import Blog from './components/Blog.vue';
 import Article from './components/Article.vue';
-import articles from './assets/articles.json';
+import projects from './assets/projects.json';
 
 const routes = [
   { 
@@ -35,21 +32,17 @@ const routes = [
     path: '/articles/:id',
     name: 'Article',
     component: Article,
-    props: route => ({ article: articles.find(a => a.id === parseInt(route.params.id)) })
+    props: route => ({ id: route.params.id })
   }
 ];
-
-
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    // Si une position sauvegardée existe (par exemple, lors du retour en arrière), on la renvoie
     if (savedPosition) {
       return savedPosition;
     } else {
-      // Sinon, on force un scroll en haut de la page
       return { top: 0 };
     }
   }

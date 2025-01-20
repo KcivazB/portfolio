@@ -1,4 +1,5 @@
-It’s official—I’ve taken the leap: I finally created a blog on my website!
+# 0. I created a blog
+_It’s official—I’ve taken the leap: I finally created a blog on my website!_
 
 The idea behind this blog is primarily to document the technologies and practices I've implemented across my various personal projects.
 
